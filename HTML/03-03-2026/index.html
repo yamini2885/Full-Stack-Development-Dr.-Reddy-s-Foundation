@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/fav logo.jpg" type="image/x-icon">
+    <title>HYBE</title>
+    <style>
+        /* .nav{
+                background-color:  #FFA47F;
+                display: flex;
+                justify-content: space-between;
+        }
+        .nav-item{
+            display: inline;
+        }
+        .car-list{
+            display: none;
+            z-index:10;
+            position: absolute;
+            left:900px;
+        }
+        .sub-nav{
+            width: 400px;
+        }
+        .career:hover .car-list{
+            display: block;
+        } */
+            
+        *{
+        
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        
+         .nav-item{
+            display: inline;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            width: 700px;
+           
+
+        }
+       
+        .hero-img{
+            margin-left: 100px;
+        }
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            
+            top: 100px;
+            left: 900px;
+        
+        }
+        .career:hover .car-list{
+            display: block;
+        }
+        .car-link{
+            text-decoration: none;
+            color: #000;
+        }
+        nav{
+            background-color:  #FFA47F;
+            position: sticky;
+            top:0px;
+        }
+    </style>
+</head>
+<body>
+   
+        <nav class="nav">
+            <a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="About.html" class="nav-link">About</a></li>
+                <li class="nav-item " style="flex-grow: 2;">
+                    <a href="Courses.html" class="nav-link ">Courses</a>
+                    
+                </li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Alumini.html" class="nav-link">Alumini</a></li>
+                <li class="nav-item  career" style="flex-grow: 2;">
+                    <a href="Careers.html" class="nav-link">Careers</a>
+                    <ul class="car-list">
+                        <li class="car-item"><a class="car-link" href="">Artist Division</a></li>
+                        <li class="car-item"><a class="car-link" href="">Music Production</a></li>
+                        <li class="car-item"><a class="car-link" href="">Technology & Platform</a></li>
+                        <li class="car-item"><a class="car-link" href="">Business & Management</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="Contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+            </nav>
+       
+    
+     <div class="hero-img">
+            <img src="./Assets/hero image.jpg " alt="hybe" width="1200px">
+        </div>
+</body>
+</html>

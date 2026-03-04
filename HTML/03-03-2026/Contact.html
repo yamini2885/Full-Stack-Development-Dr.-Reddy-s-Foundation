@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/fav logo.jpg" type="image/x-icon">
+    <title>HYBE</title>
+    <style>
+    
+        *{
+        
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: #FFA47F;
+            height: 100px;
+            align-items: center;
+            position: sticky;
+            top: 0;
+
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+            /* border: 2px solid red; */
+            /* justify-content: space-around; */
+
+        }
+        .container{
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            align-items: center;
+            justify-content: space-around;
+
+        } 
+        form{
+            width: 500px;
+            /* border: 2px solid blue; */
+            height: 400px;
+        }
+        .sub-container{
+            width: 800px;
+            /* border: 2px solid blue; */
+            
+        }
+        input{
+            width: 380px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button{
+            width: 300px;
+            padding: 10px;
+            background-color:  #8100D1;
+            color: white;
+            border-radius: 10px;
+            border: none;
+
+        }
+        textarea{
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+   
+        <div class="nav">
+            <li class="nav-item"><a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a></li>
+            <div class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="About.html" class="nav-link">About</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Alumini.html" class="nav-link">Alumini</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Careers.html" class="nav-link">Careers</a></li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="Contact.html" class="nav-link">Contact US</a></li>
+        </div>
+        </div>
+       
+    
+        <div class="container">
+            <form action="">
+                <fieldset>
+                    <legend>Contact Form</legend>
+                    <table>
+                        <tr>
+                            <td><label for="name">Name</label></td>
+                            <td><input type="text" id="name" placeholder="Enter your name"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="mail">Mail</label></td>
+                            <td><input type="mail" id="mail" placeholder="Enter your mail"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="reason">How can we Help you</label></td>
+                            <td><textarea name="reason" id="reason" placeholder="Enter your requirement" rows="10" cols="50"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="text-align: center;"><button type="submit">Submit</button></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </form>
+
+            <div class="sub-container">
+                <h3>Phone  : +82 2-3444-0105</h3>
+                <h3>Email : hybe.india@hybecorp.com</h3>
+                <h3>Address: 42 Hangang-daero, Yongsan-gu, Seoul, South Korea - Headquarters of HYBE.</h3>
+                <h3>https://hybecorp.com/ - Official HYBE corporate site.</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3001907069283!2d126.96147487550225!3d37.52442037204953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1adbde4193d%3A0xb66b720a6871a40a!2sHybe%20Headquarters!5e0!3m2!1sen!2sin!4v1772536440062!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+
+            </div>
+        </div>
+        
+</body>
+</html>
