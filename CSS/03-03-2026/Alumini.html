@@ -7,22 +7,26 @@
     <title>HYBE</title>
     <style>
     
-        *{
+       *{
         
             box-sizing: border-box;
-            overflow-x: hidden;
+            /* overflow-x: hidden; */
         }
         
         .nav{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+             align-items: center;
             background-color:  #FFA47F;
-            height: 100px;
-            align-items: center;
+           
             position: sticky;
             top: 0;
 
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
         }
         .nav-link{
             text-decoration: none;
@@ -33,9 +37,46 @@
             display: flex;
             flex-direction: row;
             width: 700px;
-            /* border: 2px solid red; */
-            /* justify-content: space-around; */
+        }
+       
+       
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            /* top: 75px; */
+            left: 80%;
+            background-color: #FFA47F;
+            border: 2px solid gray;
 
+        
+        }
+        
+       
+       
+        
+        .career:hover .car-list{
+            display: block;
+        }
+         .car-list:hover{
+            display: block;
+        }
+        .car-item{
+            padding:20px;
+        list-style-type: none;
+        position: relative;
+        left:-35px;
+        border:1px solid gray;
+        width: 235px;
+        }
+        .car-list{
+        width:250px;
+    }
+       
+        .car-link{
+            text-decoration: none;
+            color: #000;
+            
         }
        .container{
        
@@ -64,17 +105,33 @@
 </head>
 <body>
    
-        <div class="nav">
-            <li class="nav-item"><a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a></li>
-            <div class="sub-nav">
+        
+        <nav class="nav">
+            <a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a>
+         
+                <ul class="sub-nav">
                 <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
                 <li class="nav-item" style="flex-grow: 2;"><a href="About.html" class="nav-link">About</a></li>
-                <li class="nav-item" style="flex-grow: 2;"><a href="Courses.html" class="nav-link">Courses</a></li>
+                <li class="nav-item " style="flex-grow: 2;">
+                    <a href="Courses.html" class="nav-link ">Courses</a>
+                    
+                </li>
                 <li class="nav-item" style="flex-grow: 2;"><a href="Alumini.html" class="nav-link">Alumini</a></li>
-                <li class="nav-item" style="flex-grow: 2;"><a href="Careers.html" class="nav-link">Careers</a></li>
+                <li class="nav-item  career" style="flex-grow: 2;">
+                    <a href="Careers.html" class="nav-link">Careers</a>
+                    <ul class="car-list">
+                        <li class="car-item"><a class="car-link" href="artist.html">Artist Division</a></li>
+                        <li class="car-item"><a class="car-link" href="music.html">Music Production</a></li>
+                        <li class="car-item"><a class="car-link" href="tech.html">Technology & Platform</a></li>
+                        <li class="car-item"><a class="car-link" href="business.html">Business & Management</a></li>
+
+                    </ul>
+                </li>
                 <li class="nav-item" style="flex-grow: 6;"><a href="Contact.html" class="nav-link">Contact US</a></li>
-        </div>
-        </div>
+                </ul>
+                
+       
+            </nav>
        
     
         <div class="container">

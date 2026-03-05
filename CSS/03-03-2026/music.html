@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/fav logo.jpg" type="image/x-icon">
+    <title>HYBE</title>
+    <style>
+        /* .nav{
+                background-color:  #FFA47F;
+                display: flex;
+                justify-content: space-between;
+        }
+        .nav-item{
+            display: inline;
+        }
+        .car-list{
+            display: none;
+            z-index:10;
+            position: absolute;
+            left:900px;
+        }
+        .sub-nav{
+            width: 400px;
+        }
+        .career:hover .car-list{
+            display: block;
+        } */
+            
+        /* *{
+        
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+         nav{
+            background-color:  #FFA47F;
+            position: sticky;
+            top:0px;
+        }
+         .nav-item{
+            display: inline;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            width: 700px;
+           
+
+        }
+       
+        .hero-img{
+            margin-left: 100px;
+        }
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            
+            top: 100px;
+            left: 900px;
+        
+        }
+        .career:hover .car-list{
+            display: block;
+        }
+        .car-link{
+            text-decoration: none;
+            color: #000;
+        } */
+
+
+           
+         *{
+        
+            box-sizing: border-box;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+             align-items: center;
+            background-color:  #FFA47F;
+           
+            position: sticky;
+            top: 0;
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+       
+       
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            /* top: 75px; */
+            left: 80%;
+            background-color: #FFA47F;
+            border: 2px solid gray;
+
+        
+        }
+        
+       
+       
+        
+        .career:hover .car-list{
+            display: block;
+        }
+         .car-list:hover{
+            display: block;
+        }
+        .car-item{
+            padding:20px;
+        list-style-type: none;
+        position: relative;
+        left:-35px;
+        border:1px solid gray;
+        width: 235px;
+        }
+        .car-list{
+        width:250px;
+    }
+       
+        .car-link{
+            text-decoration: none;
+            color: #000;
+            
+        }
+
+
+        .container{
+            /* border: 2px solid red; */
+           
+            height: 1700px;
+             display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+           margin-top: 100px;
+
+        }
+       
+        .sub-container{
+            /* border: 2px solid blue; */
+            width: 500px;
+        }
+        .sub-container h1{
+            text-align: center;
+        }
+        .bond{
+            display: flex;
+        }
+        .bond p{
+            width: 600px;
+            text-align: right;
+        }
+                button{
+            background-color: #8100D1;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 200px;
+            margin-left: 100px;
+            border-radius: 10px;
+        }
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+        <nav class="nav">
+            <a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="About.html" class="nav-link">About</a></li>
+                <li class="nav-item " style="flex-grow: 2;">
+                    <a href="Courses.html" class="nav-link ">Courses</a>
+                    
+                </li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Alumini.html" class="nav-link">Alumini</a></li>
+                <li class="nav-item  career" style="flex-grow: 2;">
+                    <a href="Careers.html" class="nav-link">Careers</a>
+                    <ul class="car-list">
+                        <li class="car-item"><a class="car-link" href="artist.html">Artist Division</a></li>
+                        <li class="car-item"><a class="car-link" href="music.html">Music Production</a></li>
+                        <li class="car-item"><a class="car-link" href="tech.html">Technology & Platform</a></li>
+                        <li class="car-item"><a class="car-link" href="business.html">Business & Management</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="Contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+            </nav>
+       
+            <h1 class="main">Music Production Division</h1>
+            <div class="container">
+                
+
+                <div class="sub-container">
+    <h1>Music Producer</h1>
+
+    <table>
+        <tr>
+            <td><h3>About the Position:</h3></td>
+            <td>
+                <p>The Music Producer will oversee the creative and technical development of songs from concept to final release. This role involves composing, arranging, supervising recording sessions, and collaborating with artists to craft high-quality music productions aligned with the company’s artistic vision.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Bond:</h3></td>
+            <td><p>1–2 year creative contract commitment.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Required Qualifications:</h3></td>
+            <td>
+                <ol>
+                    <li>Strong knowledge of music composition and arrangement</li>
+                    <li>Proficiency in DAWs (Logic Pro, Ableton, FL Studio, etc.)</li>
+                    <li>Understanding of current global music trends</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Experience:</h3></td>
+            <td><p>Minimum 2 years of music production experience or a strong production portfolio required.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Salary:</h3></td>
+            <td><p>₹80,000 – ₹1,50,000 per month (Performance-based incentives applicable)</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Benefits:</h3></td>
+            <td>
+                <ol>
+                    <li>Access to professional studio facilities</li>
+                    <li>Creative collaboration with top artists</li>
+                    <li>Royalty and publishing opportunities</li>
+                    <li>Global exposure and industry networking</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button>Apply now</button></td>
+        </tr>
+    </table>
+</div>
+<div class="sub-container">
+    <h1>Sound Engineer</h1>
+
+    <table>
+        <tr>
+            <td><h3>About the Position:</h3></td>
+            <td>
+                <p>The Sound Engineer is responsible for recording, editing, and enhancing audio quality during studio sessions and live performances. The role requires technical expertise in sound equipment, microphones, and mixing consoles to ensure high-quality output.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Bond:</h3></td>
+            <td><p>1-year employment agreement.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Required Qualifications:</h3></td>
+            <td>
+                <ol>
+                    <li>Diploma/Degree in Sound Engineering or Audio Technology</li>
+                    <li>Strong understanding of recording equipment and acoustics</li>
+                    <li>Knowledge of mixing consoles and audio software</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Experience:</h3></td>
+            <td><p>Minimum 1 year of studio or live sound experience preferred.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Salary:</h3></td>
+            <td><p>₹50,000 – ₹90,000 per month</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Benefits:</h3></td>
+            <td>
+                <ol>
+                    <li>Work in professional-grade studios</li>
+                    <li>Exposure to high-profile music projects</li>
+                    <li>Technical skill enhancement programs</li>
+                    <li>Health and wellness benefits</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button>Apply now</button></td>
+        </tr>
+    </table>
+</div>
+<div class="sub-container">
+    <h1>Mixing & Mastering Specialist</h1>
+
+    <table>
+        <tr>
+            <td><h3>About the Position:</h3></td>
+            <td>
+                <p>The Mixing & Mastering Specialist will refine recorded tracks to achieve balanced, polished, and release-ready audio. This role ensures optimal sound quality across streaming platforms, broadcast, and live events.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Bond:</h3></td>
+            <td><p>1-year technical contract.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Required Qualifications:</h3></td>
+            <td>
+                <ol>
+                    <li>Advanced knowledge of mixing and mastering techniques</li>
+                    <li>Expertise in plugins, EQ, compression, and sound design</li>
+                    <li>Strong attention to audio detail</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Experience:</h3></td>
+            <td><p>Minimum 2 years of professional mixing/mastering experience required.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Salary:</h3></td>
+            <td><p>₹70,000 – ₹1,20,000 per month</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Benefits:</h3></td>
+            <td>
+                <ol>
+                    <li>Access to premium audio software and tools</li>
+                    <li>Credit recognition on released tracks</li>
+                    <li>Performance-based bonuses</li>
+                    <li>International project exposure</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button>Apply now</button></td>
+        </tr>
+    </table>
+</div>
+<div class="sub-container">
+    <h1>Recording Studio Assistant</h1>
+
+    <table>
+        <tr>
+            <td><h3>About the Position:</h3></td>
+            <td>
+                <p>The Recording Studio Assistant supports producers and engineers during recording sessions. Responsibilities include equipment setup, session documentation, track organization, and maintaining studio efficiency.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Bond:</h3></td>
+            <td><p>6-month service agreement.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Required Qualifications:</h3></td>
+            <td>
+                <ol>
+                    <li>Basic knowledge of audio equipment and DAWs</li>
+                    <li>Strong organizational skills</li>
+                    <li>Passion for music production</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td><h3>Experience:</h3></td>
+            <td><p>Freshers may apply; internship experience preferred.</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Salary / Stipend:</h3></td>
+            <td><p>₹20,000 – ₹30,000 per month</p></td>
+        </tr>
+
+        <tr>
+            <td><h3>Benefits:</h3></td>
+            <td>
+                <ol>
+                    <li>Hands-on studio experience</li>
+                    <li>Direct mentorship from senior engineers</li>
+                    <li>Skill development workshops</li>
+                    <li>Opportunity for full-time placement</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button>Apply now</button></td>
+        </tr>
+    </table>
+</div>
+            </div>
+     
+</body>
+</html>

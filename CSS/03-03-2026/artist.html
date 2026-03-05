@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Assets/fav logo.jpg" type="image/x-icon">
+    <title>HYBE</title>
+    <style>
+        /* .nav{
+                background-color:  #FFA47F;
+                display: flex;
+                justify-content: space-between;
+        }
+        .nav-item{
+            display: inline;
+        }
+        .car-list{
+            display: none;
+            z-index:10;
+            position: absolute;
+            left:900px;
+        }
+        .sub-nav{
+            width: 400px;
+        }
+        .career:hover .car-list{
+            display: block;
+        } */
+            
+        /* *{
+        
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+         nav{
+            background-color:  #FFA47F;
+            position: sticky;
+            top:0px;
+        }
+         .nav-item{
+            display: inline;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            width: 700px;
+           
+
+        }
+       
+        .hero-img{
+            margin-left: 100px;
+        }
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            
+            top: 100px;
+            left: 900px;
+        
+        }
+        .career:hover .car-list{
+            display: block;
+        }
+        .car-link{
+            text-decoration: none;
+            color: #000;
+        } */
+
+
+           
+        *{
+        
+            box-sizing: border-box;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+             align-items: center;
+            background-color:  #FFA47F;
+           
+            position: sticky;
+            top: 0;
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            color: #000;
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+       
+       
+        .car-list{
+            display: none;
+            position: absolute;
+            z-index: 10;
+            /* top: 75px; */
+            left: 80%;
+            background-color: #FFA47F;
+            border: 2px solid gray;
+
+        
+        }
+        
+       
+       
+        
+        .career:hover .car-list{
+            display: block;
+        }
+         .car-list:hover{
+            display: block;
+        }
+        .car-item{
+            padding:20px;
+        list-style-type: none;
+        position: relative;
+        left:-35px;
+        border:1px solid gray;
+        width: 235px;
+        }
+        .car-list{
+        width:250px;
+    }
+       
+        .car-link{
+            text-decoration: none;
+            color: #000;
+            
+        }
+
+
+        .container{
+            /* border: 2px solid red; */
+           
+            height: 1700px;
+             display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+           margin-top: 100px;
+
+        }
+       
+        .sub-container{
+            /* border: 2px solid blue; */
+            width: 500px;
+        }
+        .sub-container h1{
+            text-align: center;
+        }
+        .bond{
+            display: flex;
+        }
+        .bond p{
+            width: 600px;
+            text-align: right;
+        }
+                button{
+            background-color: #8100D1;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 200px;
+            margin-left: 100px;
+            border-radius: 10px;
+        } 
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+        <nav class="nav">
+            <a href="" class="nav-link" ><img src="./Assets/nav logo.png" alt="HYBE LOGO" height="80" width="300"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="About.html" class="nav-link">About</a></li>
+                <li class="nav-item " style="flex-grow: 2;">
+                    <a href="Courses.html" class="nav-link ">Courses</a>
+                    
+                </li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="Alumini.html" class="nav-link">Alumini</a></li>
+                <li class="nav-item  career" style="flex-grow: 2;">
+                    <a href="Careers.html" class="nav-link">Careers</a>
+                    <ul class="car-list">
+                        <li class="car-item"><a class="car-link" href="artist.html">Artist Division</a></li>
+                        <li class="car-item"><a class="car-link" href="music.html">Music Production</a></li>
+                        <li class="car-item"><a class="car-link" href="tech.html">Technology & Platform</a></li>
+                        <li class="car-item"><a class="car-link" href="business.html">Business & Management</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="Contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+            </nav>
+            <h1 class="main">Artist Division</h1>
+            <div class="container">
+                        
+                <div class="sub-container">
+                    <h1>Vocal Artist Trainee</h1>
+
+                    <table>
+                        <tr>
+                            <td><h3>About the Position:</h3></td>
+                            <td><p>The Vocal Artist Trainee program is designed to develop emerging talent through structured vocal training, performance workshops, and studio exposure. Trainees will work closely with professional vocal coaches and performance directors to refine their artistic identity.</p></td>
+                        </tr>
+                        <tr>
+                            <td> <h3>Bond:</h3></td>
+                            <td><p>1-year training commitment agreement.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Required Qualifications:</h3></td>
+                            <td> <p>
+                                    <ol>
+                                        <li>Strong vocal foundation (classical or contemporary)</li>
+                                        <li>Basic knowledge of music theory preferred</li>
+                                        <li>Passion for stage performance</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Experience:</h3></td>
+                            <td> <p>Freshers may apply; prior stage/singing competition experience is an advantage.</p></td>
+                        </tr>
+
+                        <tr>
+                            <td> <h3>Salary / Stipend:</h3></td>
+                            <td>  <p>₹25,000 - ₹40,000 per month (Training Stipend)</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Benefits:</h3></td>
+                            <td>
+                                 <p>
+                                    <ol>
+                                        <li>Professional vocal coaching</li>
+                                        <li>Studio recording opportunities</li>
+                                        <li>Performance showcases</li>
+                                        <li>Career mentorship</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"> <button>Apply now</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                <div class="sub-container">
+                    <h1>Professional Dancer / Performer</h1>
+
+                    <table>
+                        <tr>
+                            <td><h3>About the Position:</h3></td>
+                            <td><p>Responsible for delivering high-energy stage performances, music video choreography, and live event appearances. Candidates will train in multiple dance styles including hip-hop, contemporary, and K-pop performance styles.</p></td>
+                        </tr>
+                        <tr>
+                            <td> <h3>Bond:</h3></td>
+                            <td><p>1-2 year performance contract.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Required Qualifications:</h3></td>
+                            <td> <p>
+                                    <ol>
+                                        <li>Formal dance training</li>
+                                        <li>Strong rhythm and flexibility</li>
+                                        <li>Ability to learn choreography quickly</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Experience:</h3></td>
+                            <td> <p>Minimum 1 year performance or competition experience preferred.</p></td>
+                        </tr>
+
+                        <tr>
+                            <td> <h3>Salary / Stipend:</h3></td>
+                            <td>  <p>₹40,000 – ₹80,000 per month (based on skill & role)</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Benefits:</h3></td>
+                            <td>
+                                 <p>
+                                    <ol>
+                                        <li>Professional choreography training</li>
+                                        <li>Performance tours</li>
+                                        <li>Fitness & wellness support</li>
+                                        <li>Brand collaboration opportunities</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"> <button>Apply now</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="sub-container">
+                    <h1>Rap & Lyric Specialist</h1>
+
+                    <table>
+                        <tr>
+                            <td><h3>About the Position:</h3></td>
+                            <td><p>Develop and perform original rap verses and lyrical compositions. Collaborate with producers and creative directors to create impactful musical storytelling.</p></td>
+                        </tr>
+                        <tr>
+                            <td> <h3>Bond:</h3></td>
+                            <td><p>1-year creative agreement.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Required Qualifications:</h3></td>
+                            <td> <p>
+                                    <ol>
+                                        <li>Strong writing skills</li>
+                                        <li>Flow control and rhythm mastery</li>
+                                        <li>Basic studio knowledge</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Experience:</h3></td>
+                            <td> <p>Portfolio of original work required.</p></td>
+                        </tr>
+
+                        <tr>
+                            <td> <h3>Salary / Stipend:</h3></td>
+                            <td>  <p>₹50,000 - ₹1,00,000 per month (project-based incentives included)</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Benefits:</h3></td>
+                            <td>
+                                 <p>
+                                    <ol>
+                                        <li>Studio access</li>
+                                        <li>Publishing credit opportunities</li>
+                                        <li>Creative collaboration with producers</li>
+                                        <li>Global exposure opportunities</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"> <button>Apply now</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div class="sub-container">
+                    <h1>Stage Performance Intern</h1>
+
+                    <table>
+                        <tr>
+                            <td><h3>About the Position:</h3></td>
+                            <td><p>Support live performances, rehearsals, and backstage coordination. Gain hands-on experience in stage production and artist performance management.</p></td>
+                        </tr>
+                        <tr>
+                            <td> <h3>Bond:</h3></td>
+                            <td><p>6-month internship agreement.</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Required Qualifications:</h3></td>
+                            <td> <p>
+                                    <ol>
+                                        <li>Interest in performance arts</li>
+                                        <li>Good communication skills</li>
+                                        <li>Ability to work flexible hours</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><h3>Experience:</h3></td>
+                            <td> <p>Freshers welcome.</p></td>
+                        </tr>
+
+                        <tr>
+                            <td> <h3>Salary / Stipend:</h3></td>
+                            <td>  <p>₹15,000 - ₹20,000 per month (Training Stipend)</p></td>
+                        </tr>
+                        <tr>
+                            <td><h3>Benefits:</h3></td>
+                            <td>
+                                 <p>
+                                    <ol>
+                                        <li>Real-world event experience</li>
+                                        <li>Networking opportunities</li>
+                                        <li>Certificate of completion</li>
+                                        <li>Career growth pathway within the company</li>
+                                    </ol>
+                                </p>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2"> <button>Apply now</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+                
+            </div>
+     
+</body>
+</html>
