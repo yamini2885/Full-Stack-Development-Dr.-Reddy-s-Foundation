@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/fav1.png">
+    <title>Places</title>
+      <style>
+         *{
+        
+            box-sizing: border-box;
+             font-family: sans-serif;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:  rgba(4, 22, 87,0.9);
+
+             align-items: center;
+           
+        
+            position: sticky;
+            top: 0; 
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            
+             color: #ffd54f;
+            /* border: 2px solid black; */
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+
+        /* ------------------------ */
+
+        
+.video-container {
+  position: relative; /* make it relative to contain the overlay */
+  width: 100%;
+  height: 90vh;
+}
+
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute; /* now relative to video-container */
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+.sub-container{
+    padding: 100px;
+}
+.sub-container h3{
+    font-size: xx-large;
+    text-decoration: underline;
+    color: rgba(4, 22, 87,0.9);
+}
+.sub-container p{
+    text-indent: 50px;
+}
+    .images{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .iscon{
+        color: #F67D31;
+  font-size: 28px;
+  font-weight: bold;
+  background: rgba(4, 22, 87,0.9);
+  padding: 10px;
+  border-radius: 8px;
+    }
+        </style>
+</head>
+<body>
+     <nav class="nav">
+            <a href="#" class="nav-link" ><img src="./Assets/main_logo.png" alt="Sri Krishna Logo" height="100" width="200"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item " style="flex-grow: 2;"><a href="places.html" class="nav-link ">Must Visit Places</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="quotes.html" class="nav-link">Popular Quotes</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="festivals.html" class="nav-link">Festivals</a></li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+     </nav>
+
+     <div class="video-container">
+    <video autoplay loop muted playsinline>
+    <source src="./Assets/mathura.mp4" type="video/mp4">
+    </video>
+  <div class="overlay-text">
+    <h2>Mathura - The Divine Birthplace of Krishna</h2>
+    <h4>Where every corner whispers the stories of Krishna’s childhood</h4>
+  </div>
+</div>
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Mathura is celebrated as the birthplace of Lord Krishna, one of the most revered deities in Hinduism. According to the legends, Krishna was born in a prison cell of King Kamsa, who feared a prophecy that Krishna would overthrow him. The city of Mathura grew into a major center of Vaishnavism, with temples and ghats along the sacred Yamuna River. Walking through Mathura is like stepping into the pages of Krishna’s early life – from his playful antics in Gokul to his divine miracles.</p>
+
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Witness the Krishna Janmabhoomi Temple, built at the very spot of Krishna’s birth.</li>
+            <li>Experience Janmashtami celebrations, when the city transforms into a festival of lights, music, and devotion.</li>
+            <li>Spiritual aura and historic ghats along the Yamuna River for prayers and rituals.</li>
+            <li>Explore nearby temples like Dwarkadhish Temple and Vishram Ghat.</li>
+
+        </ul>
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+            <img src="./Assets/mathura-peda.jpg" alt="" height="200" width="200">
+                <p>Mathura Peda</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/rabri.png" alt="" height="200" width="200">
+                <p>Rabri</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/Kachori.jpg" alt="" height="200" width="200">
+                <p>Kachori</p>
+            </div>
+            
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>Walk along the holy ghats for sunrise prayers and river rituals.</li>
+            <li>Attend temple aartis and bhajan sessions for an immersive spiritual experience.</li>
+            <li>Participate in local cultural performances during festivals.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Location: Uttar Pradesh, North India (on the banks of River Yamuna)</p>
+
+       </div>
+</div>
+
+
+ <div class="video-container">
+    <video autoplay loop muted playsinline>
+    <source src="./Assets/prem-mandir.mp4" type="video/mp4">
+    </video>
+  <div class="overlay-text">
+   <h2>Vrindavan - The Temple of Divine Love</h2>
+<h4>Where marble carvings and lights narrate Krishna’s eternal pastimes</h4>
+  </div>
+</div>
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Prem Mandir, meaning “Temple of Divine Love,” was established by Jagadguru Shri Kripalu Ji Maharaj and inaugurated in 2012. The temple is made entirely of white marble and intricately carved with scenes from Lord Krishna’s life, including his childhood pastimes and the Ras Leela with Radha. It symbolizes universal love and devotion to Krishna, attracting devotees from across India and the world.</p>
+
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Marvel at the intricate marble carvings depicting Krishna’s divine pastimes.</li>
+            <li>Witness the temple illuminated at night with thousands of lights—an enchanting experience.</li>
+            <li>Experience the spiritual atmosphere in one of the most beautifully designed Krishna temples in India.</li>
+            <li>Ideal for devotees, families, and photography enthusiasts alike.</li>
+
+        </ul>
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+            <img src="./Assets/gujiyas.jpg" alt="" height="200" width="200">
+                <p>Gujiyas</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/gilebi.png" alt="" height="200" width="200">
+                <p>Gilebi</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/Malai Lassi.jpg" alt="" height="200" width="200">
+                <p>Malai Lassi</p>
+            </div>
+            
+            
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>The temple is illuminated with thousands of lights at night, creating a magical atmosphere while narrating Krishna’s pastimes through sound and music.</li>
+            <li>Visitors can admire the intricate white marble carvings that depict Krishna’s childhood, Ras Leela, and divine stories on the walls, ceilings, and pillars.</li>
+            <li>Many devotees participate in aarti and bhajans, meditate in the serene surroundings, and enjoy a sense of devotion and calm that’s unique to Prem Mandir.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Prem Mandir, Vrindavan, Mathura, Uttar Pradesh, India</p>
+
+<p>Easily accessible from Mathura Junction railway station (approx. 12 km)</p>
+
+
+
+        </div>
+    </div>
+
+
+    
+ <div class="video-container">
+    <video autoplay loop muted playsinline>
+    <source src="./Assets/Dwaraka.mp4" type="video/mp4">
+    </video>
+  <div class="overlay-text">
+   <h2>Dwarka – The Sacred City of Lord Krishna</h2>
+<h4>Where Krishna’s divine kingdom meets history and devotion</h4>
+  </div>
+</div>
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Dwarka, located on the western coast of India in Gujarat, is believed to have been the majestic kingdom of Lord Krishna. According to legends and the Mahabharata, after Krishna’s departure from the mortal world, Dwarka was gradually submerged under the Arabian Sea due to rising waters, and remains an important archaeological and spiritual site. Excavations off the coast have revealed remnants of the ancient city, giving credence to these age-old stories. Dwarka is also one of the Char Dham pilgrimage sites, making it a crucial spiritual destination for devotees.</p>
+
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Explore the Dwarkadhish Temple, the iconic five-story temple dedicated to Lord Krishna, adorned with intricate carvings and vibrant decorations.</li>
+            <li>Witness the spiritual aura of a city that has stood the test of time and oceanic submergence.</li>
+            <li>Enjoy the blend of history, devotion, and seaside beauty along the Arabian Sea coast.</li>
+            <li>Participate in festivals like Janmashtami, when the temple and city come alive with celebrations.</li>
+
+        </ul>
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+            <img src="./Assets/khakra.jpg" alt="" height="200" width="200">
+                <p>khakra</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/dhokla.jpg" alt="" height="200" width="200">
+                <p>Dhokla</p>
+            </div>
+            <div class="img">
+            <img src="./Assets/fafda.jpg" alt="" height="200" width="200">
+                <p>Fafda</p>
+            </div>
+            
+            
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>Take a pilgrimage walk to Dwarkadhish Temple and participate in aarti rituals.</li>
+            <li>Witness the sunset at Dwarka Beach while reflecting on the city’s divine heritage.</li>
+            <li> Explore local markets for souvenirs, handicrafts, and traditional snacks.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Dwarka, Gujarat, Western India (Arabian Sea coast)</p>
+        <p>Easily accessible from Dwarka railway station and Dwaraka Airport (near Jamnagar, ~137 km)</p>
+
+
+        </div>
+    </div>
+
+    <div class="video-container">
+    <video autoplay loop muted playsinline>
+    <source src="./Assets/udipi.mp4" type="video/mp4">
+    </video>
+ <div class="overlay-text">
+  <h2>Udupi – The Divine Seat of Krishna and Rukmini’s Sacred Tradition</h2>
+  <h4>Home to the revered Krishna idol and timeless rituals inspired by Rukmini Devi’s devotion</h4>
+</div>
+</div>
+
+    <div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Udupi, located in the coastal region of Karnataka, is one of the most sacred Krishna pilgrimage centers in South India. The town is closely associated with the great saint Sri Madhvacharya, who founded the Dvaita philosophy. According to tradition, the beautiful idol of Lord Krishna worshipped here was discovered by Madhvacharya from a lump of sacred clay brought by a sailor.</p>
+
+        <p>An important and unique aspect of Udupi’s spiritual heritage is its connection to Sri Rukmini Devi. Devotees believe that the idol tradition followed in the temple traces back to divine instructions linked to Rukmini Devi, who desired that Krishna be worshipped in a special form with strict daily rituals. The temple continues to preserve this sacred tradition even today, with elaborate sevas and poojas performed every day with deep devotion.</p>
+
+        <p>The Krishna temple is also famous for its unique “Kanakana Kindi” — a small window through which devotees view the deity, symbolizing humility and equality in devotion.</p>
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Visit the sacred Udupi Sri Krishna Matha, one of the most revered Krishna temples in India.</li>
+            <li>Witness centuries-old temple traditions and daily rituals performed with discipline and devotion.</li>
+            <li>Experience the spiritual atmosphere of an ancient temple town shaped by saintly heritage.</li>
+            <li>Participate in grand festivals like Krishna Janmashtami and Rathotsava celebrations.</li>
+        </ul>
+
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+                <img src="./Assets/udipi_dosa.jpg" alt="" height="200" width="200">
+                <p>Udupi Dosa</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/idli_sambar.JPG" alt="" height="200" width="200">
+                <p>Idli Sambar</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/udipi_meels.jpg" alt="" height="200" width="200">
+                <p>Udupi Temple Meals (Annaprasadam)</p>
+            </div>
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>Have darshan of Lord Krishna through the sacred Kanakana Kindi window.</li>
+            <li>Attend early morning and evening aarti filled with devotional chants.</li>
+            <li>Enjoy the serene coastal temple town atmosphere and traditional prasadam meals.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Udupi, Karnataka, South India (Coastal Karnataka region)</p>
+        <p>Easily accessible via Udupi Railway Station and Mangalore International Airport (~60 km)</p>
+    </div>
+</div>
+
+
+<div class="video-container">
+    <video autoplay loop muted playsinline>
+        <source src="./Assets/barasana.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-text">
+        <h2>Barsana – The Sacred Birthplace of Radha Rani</h2>
+        <h4>Where the eternal love of Radha and Krishna lives through devotion, hills, and festivals</h4>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Barsana is the sacred birthplace of Radha Rani, the eternal divine consort of Lord Krishna. Located near Vrindavan in Uttar Pradesh, this holy town is deeply revered in the Radha–Krishna tradition and attracts devotees from across the world.</p>
+
+        <p>According to ancient beliefs, Barsana was once known as Brahmachal Parvat and is surrounded by four hills that are said to represent the heads of Lord Brahma. The town beautifully preserves the divine memories, playful pastimes, and spiritual love of Radha and Krishna through its temples, festivals, and devotional culture.</p>
+
+        <p>The most prominent shrine here is the Radha Rani Temple, situated atop a scenic hill, offering breathtaking views and a deeply peaceful spiritual atmosphere.</p>
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Visit the sacred birthplace of Radha Rani, symbol of divine love and devotion.</li>
+            <li>Experience the spiritual essence of Radha–Krishna leelas preserved in this holy town.</li>
+            <li>Witness the world-famous Lathmar Holi festival celebrated with vibrant colors and tradition.</li>
+            <li>Enjoy the beauty of ancient temples, sacred kunds, and picturesque hills.</li>
+        </ul>
+
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+                <img src="./Assets/bedai.jpg" alt="" height="200" width="200">
+                <p>Bedai with Aloo Sabzi</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/malpuas.jpg" alt="" height="200" width="200">
+                <p> Malpua</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/chat.jpg" alt="" height="200" width="200">
+                <p>Chaat</p>
+            </div>
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>Climb the steps to Radha Rani Temple and enjoy panoramic hilltop views.</li>
+            <li>Take part in devotional kirtans and temple aarti ceremonies.</li>
+            <li>Experience the joyful energy of Lathmar Holi and festive celebrations.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Barsana, Uttar Pradesh, North India (near Vrindavan & Mathura region)</p>
+        <p>Easily accessible from Mathura Railway Station (~50 km) and Agra Airport (~115 km)</p>
+    </div>
+</div>
+
+<div class="video-container">
+    <video autoplay loop muted playsinline>
+        <source src="./Assets/guruvayur.mp4" type="video/mp4">
+    </video>
+    <div class="overlay-text">
+        <h2>Guruvayur – The Dwarka of the South</h2>
+        <h4>Where ancient devotion to Lord Krishna lives through sacred rituals and timeless traditions</h4>
+    </div>
+</div>
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+        <p>Guruvayur is one of the most sacred pilgrimage towns in Kerala, home to the revered 
+        Guruvayur Temple dedicated to Lord Krishna. The temple is believed to house a divine idol of Krishna in his majestic four-armed Vishnu form, worshipped for thousands of years.</p>
+
+        <p>According to sacred legend, the idol was originally worshipped by Lord Vishnu himself. It was later brought to Earth and consecrated in this holy land by Guru (Brihaspati, the teacher of the gods) and Vayu (the Wind God). The place came to be known as “Guruvayur” — meaning the land of Guru and Vayu.</p>
+
+        <p>The temple is a powerful spiritual center where ancient Kerala traditions, disciplined rituals, and deep devotional practices continue unchanged even today.</p>
+
+        <h3>Why Visit</h3>
+        <ul>
+            <li>Seek blessings at one of the most important Krishna temples in India.</li>
+            <li>Witness traditional Kerala temple rituals preserved for centuries.</li>
+            <li>Experience the deeply spiritual atmosphere filled with devotional chants.</li>
+            <li>Attend grand festivals like Guruvayur Ekadasi and Krishna Janmashtami.</li>
+        </ul>
+
+        <h3>Popular Food</h3>
+        <div class="images">
+            <div class="img">
+                <img src="./Assets/idiyappam.jpg" alt="" height="200" width="200">
+                <p>Idiyappam with Vegetable Stew</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/puttu.jpg" alt="" height="200" width="200">
+                <p>Puttu with Kadala Curry</p>
+            </div>
+            <div class="img">
+                <img src="./Assets/Unniyappam.jpg" alt="" height="200" width="200">
+                <p>Unniyappam</p>
+            </div>
+        </div>
+
+        <h3>Visitor Experience</h3>
+        <ul>
+            <li>Have divine darshan of Lord Krishna in a serene and sacred setting.</li>
+            <li>Witness majestic temple processions with decorated elephants and traditional music.</li>
+            <li>Visit the nearby elephant sanctuary and enjoy Kerala’s cultural heritage.</li>
+        </ul>
+
+        <h3>Location</h3>
+        <p>Guruvayur, Kerala, South India (Thrissur district)</p>
+        <p>Easily accessible via Guruvayur Railway Station and Cochin International Airport (~80 km)</p>
+    </div>
+</div>
+
+
+
+    
+    <div class="iscon">
+    <h2>ISKCON Temples – Modern Centers of Krishna Devotion</h2>
+    <h4>Where timeless bhakti meets grand architecture and global spiritual culture</h4>
+</div>
+
+
+<div class="container">
+    <div class="sub-container">
+        <h3>History & Story</h3>
+       <p>A. C. Bhaktivedanta Swami Prabhupada, a revered spiritual teacher who wanted to spread the teachings of Lord Krishna to the entire world. In 1966, he founded the
+International Society for Krishna Consciousness in New York with a simple mission — to teach Bhakti Yoga and the divine message of the
+Bhagavad Gita to people of all backgrounds.</p>
+
+<p>What started as a small spiritual movement soon grew into a global devotional mission. Srila Prabhupada inspired the construction of beautiful Krishna temples so people could gather, chant, learn scriptures, and experience devotion in a peaceful environment. These temples were designed not just as places of worship, but as spiritual and cultural centers promoting a pure, disciplined, and joyful way of life.</p>
+
+<p>Over the decades, ISKCON temples have been established across India and around the world. Each temple serves as a hub for kirtans (devotional singing), prasadam distribution, spiritual education, festivals, and community service — helping millions connect with
+Krishna through devotion and daily practice.</p>
+        <h3>Why Visit</h3>
+        
+<ul>
+    <li>Experience peaceful and soul-soothing devotion to Lord Krishna through daily aartis, bhajans, and kirtans</li>
+    <li>Admire grand modern temple architecture blended with traditional Vedic design</li>
+    <li>Learn the timeless wisdom of the Bhagavad Gita through spiritual classes and exhibitions</li>
+    <li>Enjoy free prasadam and pure vegetarian satvik meals served with devotion</li>
+    <li>Participate in vibrant festivals like Janmashtami and Rath Yatra</li>
+    <li>A welcoming spiritual environment open to people of all ages and backgrounds</li>
+    <li>Explore book stalls, meditation halls, and cultural programs</li>
+</ul>
+
+
+       <h3>Visitor Experience</h3>
+<ul>
+    <li>Feel a serene spiritual atmosphere filled with continuous chanting and devotional music</li>
+    <li>Attend mesmerizing aarti ceremonies with lamps, bells, and collective prayers</li>
+    <li>Join soulful kirtans where devotees sing and dance in joyful devotion</li>
+    <li>Meditate peacefully in dedicated prayer and chanting halls</li>
+    <li>Listen to spiritual discourses explaining the teachings of Lord Krishna</li>
+    <li>Explore exhibitions, Vedic museums, and multimedia shows on Krishna consciousness</li>
+    <li>Relish prasadam served with warmth and devotion</li>
+    <li>Shop for spiritual books, souvenirs, and devotional items</li>
+    <li>Volunteer in temple services and community programs</li>
+</ul>
+       <h3>Locations</h3>
+<table border="1" cellspacing="0" cellpadding="10">
+    <tr>
+        <th>Image</th>
+        <th>Place</th>
+        <th>Address</th>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/mayapur.jpg" width="250"></td>
+        <td>ISKCON Mayapur</td>
+        <td>ISKCON Chandrodaya Mandir, Sri Mayapur Dham, Nadia District, West Bengal 741313, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/Iskcon-bengalore.jpg" width="250"></td>
+        <td>ISKCON Bangalore</td>
+        <td>Hare Krishna Hill, Chord Road, Rajajinagar, Bengaluru, Karnataka 560010, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/ISKCON-Temple-Vrindavan.jpg" width="250"></td>
+        <td>ISKCON Vrindavan</td>
+        <td>Krishna Balaram Mandir, Raman Reti, Vrindavan, Uttar Pradesh 281121, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/delhi.jpg" width="250"></td>
+        <td>ISKCON Delhi</td>
+        <td>ISKCON Temple, Sant Nagar, East of Kailash, New Delhi 110065, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/iskcon-temple-mumbai.jpg" width="250"></td>
+        <td>ISKCON Mumbai</td>
+        <td>ISKCON Temple, Hare Krishna Land, Juhu, Mumbai, Maharashtra 400049, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/ISKCON_temple_in_katraj,pune.jpg" width="250"></td>
+        <td>ISKCON Pune</td>
+        <td>ISKCON NVCC Temple, Katraj-Kondhwa Road, Kondhwa, Pune, Maharashtra 411048, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/iskcon-temple-hyderabad.jpg" width="250"></td>
+        <td>ISKCON Hyderabad</td>
+        <td>ISKCON Temple, Nampally Station Road, Abids, Hyderabad, Telangana 500001, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/ISKCON-Temple-Noida.jpg" width="250"></td>
+        <td>ISKCON Noida</td>
+        <td>ISKCON Temple, Sector 33, Noida, Uttar Pradesh 201301, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/iskcon-temple-ahmedabad.jpg" width="250"></td>
+        <td>ISKCON Ahmedabad</td>
+        <td>ISKCON Temple, Sarkhej–Gandhinagar Highway, Satellite, Ahmedabad, Gujarat 380054, India</td>
+    </tr>
+
+    <tr>
+        <td><img src="./Assets/chennai.jpg" width="250"></td>
+        <td>ISKCON Chennai</td>
+        <td>ISKCON Temple, East Coast Road, Injambakkam, Chennai, Tamil Nadu 600115, India</td>
+    </tr>
+
+</table>
+    </div>
+</div>
+
+
+</body>
+</html>

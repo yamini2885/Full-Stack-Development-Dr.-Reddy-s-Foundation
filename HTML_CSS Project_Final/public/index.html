@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/fav1.png">
+    <title>Home</title>
+    <style>
+         *{
+        
+            box-sizing: border-box;
+             font-family: sans-serif;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:  rgba(4, 22, 87,0.9);
+
+             align-items: center;
+           
+        
+            position: sticky;
+            top: 0; 
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            
+             color: #ffd54f;
+          
+            /* border: 2px solid black; */
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+        
+
+        /* --------------- */
+
+        
+       .video{
+        height: 87vh;
+        width: 100%;
+        object-fit: cover;
+        
+       }
+       
+      
+        
+       /* ---------------------- */
+       .container{
+        width: 90%;
+        margin: auto;
+        height: 140vh;
+       }
+       .section1{
+        
+        padding: 50px;
+        
+       }
+       .sec1-h1{
+        text-align: center;
+        text-decoration: underline;
+        color: rgba(4, 22, 87,0.9) ;
+
+       
+       }
+       .sub_section1{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .section1-left{
+        /* border: 2px solid red; */
+        height: 90vh;
+        width: 45%;
+
+       }
+       .section1-left img{
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+       }
+       .section1-right{
+        /* border: 2px solid blue; */
+        height: 90vh;
+        width: 50%;
+        margin-left: 10px;
+       }
+       .section1-right p{
+        text-indent: 50px;
+        line-height: 21px;
+
+       }
+      
+       
+
+    /* --------------- */
+    .container2{
+        /* background-color:   */
+       
+        height: 140vh;
+        width: 100%;
+    }
+    .sub-container2{
+         /* color: #FF4400; */
+         width: 90%;
+         margin: auto;
+         padding: 50px;
+    }
+    .sub-container2 h1{
+        text-align: center;
+        text-decoration: underline;
+        color:rgba(4, 22, 87,0.9); 
+    }
+
+      .sub_section2{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .sec2-left{
+        /* border: 2px solid red; */
+        height: 90vh;
+        width: 55%;
+
+       }
+        .sec2-right{
+        /* border: 2px solid blue; */
+    
+        width: 40%;
+        margin-left: 10px;
+       }
+       .sec2-right img{
+        height: 105vh;
+        width: 100%;
+        object-fit: cover;
+        /* border: 2px solid red; */
+       }
+       .sec2-left dl dt{
+            font-weight: 600;
+            margin-top: 25px;
+           font-size: large;
+            
+
+        }
+       .sec2-left dl dt::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url("./Assets/bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+
+
+/* --------------------------------------------- */
+/* Footer Styles */
+.krishna-footer {
+  margin-top: 80px;
+  background-color: rgba(4, 22, 87, 0.9);
+  color: #ffffff;
+  padding: 50px 20px 30px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Stack by default */
+  gap: 40px;
+}
+
+/* About section full width */
+.footer-about {
+  width: 100%;
+}
+
+.footer-cols {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Each column after About */
+.footer-col {
+  flex: 1 1 230px; /* Grow and shrink with min width */
+}
+
+.footer-col h3 {
+  color: #ffd54f;
+  margin-bottom: 18px;
+  font-size: 18px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #e8eaf6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #e8eaf6;
+}
+
+.footer-col ul li a {
+  color: #e8eaf6;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #ffd54f;
+  padding-left: 4px;
+  transition: 0.2s;
+}
+
+.footer-divider {
+  width: 85%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.15);
+  margin: 40px auto 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  color: #c5cae9;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .footer-cols {
+    flex-direction: column;
+  }
+}
+    </style>
+</head>
+<body>
+     <nav class="nav">
+            <a href="#" class="nav-link" ><img src="./Assets/main_logo.png" alt="Sri Krishna Logo" height="100" width="200"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item " style="flex-grow: 2;"><a href="places.html" class="nav-link ">Must Visit Places</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="quotes.html" class="nav-link">Popular Quotes</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="festivals.html" class="nav-link">Festivals</a></li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+            </nav>
+
+
+          
+                <video autoplay loop muted playsinline class="video">
+                <source src="./Assets/main_video.mp4" type="video/mp4">
+            </video>
+           
+
+
+        <div class="container" id="who-sri-krishna">
+            <div class="section1">
+                <h1 class="sec1-h1">Who is Sri Krishna?</h1>
+            <div class="sub_section1">
+                <div class="section1-left">
+                <img src="./Assets/main_sec1.jpg" alt="">
+            </div>
+            <div class="section1-right">
+               <p>Sri Krishna stands as one of the most radiant and beloved divine figures in Hindu tradition. Worshipped as the eighth avatar of Vishnu, he embodies compassion, wisdom, and the eternal triumph of righteousness. His presence symbolizes hope in times of darkness and guidance in moments of doubt.</p>
+                <table border="1" cellpadding="10px" style="border-collapse: collapse; margin: auto;">
+                    <tr>
+                        <th>Avatar Number</th>
+                        <td>8th Avatar in the Dashavatara</td>
+                    </tr>
+                     <tr>
+                        <th>Yuga</th>
+                        <td>Dvapara Yuga</td>
+                    </tr>
+                    <tr>
+                        <th>Original (Biological) Parents</th>
+                        <td>
+                            <ul>
+                                <li>Vasudeva (Father)</li>
+                                <li>Devaki (Mother)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th>Adoptive (Foster) Parents</th>
+                        <td>
+                            <ul>
+                                <li>Nanda (Father)</li>
+                                <li>Yashoda (Mother)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                <p>In the age of Dvapara Yuga, Krishna’s life unfolded as a divine play filled with purpose and grace. His journey reflects the balance between strength and tenderness, strategy and simplicity, reminding humanity that divinity can exist in everyday life.</p>
+
+                <p>As the sacred voice of the Bhagavad Gita, Krishna revealed timeless spiritual truths that continue to guide seekers across generations. His teachings illuminate the paths of duty, devotion, and self-realization, offering clarity to the restless human mind.</p>
+
+                <p>Whether through the melody of his flute or the wisdom of his counsel, Krishna inspires hearts with divine love and fearless living. He represents harmony between thought and emotion, action and faith — a timeless symbol of purposeful and graceful existence.</p>
+               
+            </div>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="container2" id="why-SrKrishna-Worshiped">
+            <div class="sub-container2">
+                <h1>Why Sri Krishna is Worshiped?</h1>
+                <div class="sub_section2">
+                    <div class="sec2-left">
+                    <dl>
+                    <dt>Protector of Goodness</dt>
+                    <dd>He removed tyranny and protected innocent people, standing as a symbol that good will always triumph over evil.</dd>
+                    <dt>Embodiment of Divine Love</dt>
+                    <dd>His life teaches pure, unconditional love — toward family, friends, devotees, and all living beings.</dd>
+                    <dt>Teacher of Timeless Wisdom</dt>
+                    <dd>As the charioteer and guide of Arjuna in the Mahabharata, Krishna delivered the sacred teachings of the Bhagavad Gita, guiding humanity on duty, purpose, and spiritual growth.</dd>
+                    <dt>Symbol of Joy & Positivity</dt>
+                    <dd>From playful childhood stories to profound spiritual teachings, Krishna shows that life is a balance of joy, responsibility, and devotion.</dd>
+                    <dt>Path to Spiritual Liberation</dt>
+                    <dd>Devotees believe surrendering to Krishna with devotion leads to inner peace and moksha (freedom from the cycle of birth and death).</dd>
+                    <dt>Upholder of Dharma</dt>
+<dd>Whenever righteousness declines, Krishna restores moral order and cosmic balance, guiding the world back to the path of truth.</dd>
+
+<dt>Divine Friend and Guide</dt>
+<dd>Krishna shows that God can be a friend, mentor, and companion, offering personal guidance and unwavering support to every devotee.</dd>
+
+<dt>Master of Karma Yoga</dt>
+<dd>He teaches the art of selfless action — performing one’s duty with dedication while remaining detached from the results.</dd>
+
+<dt>Supreme Statesman and Strategist</dt>
+<dd>Through wisdom and diplomacy, Krishna resolved conflicts and protected society, proving that intelligence and righteousness must go together.</dd>
+    </dl>
+
+                    </div>
+                    <div class="sec2-right">
+                        <img src="./Assets/sec21.jpg" alt="" >
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <footer class="krishna-footer">
+  <div class="footer-container">
+
+    <!-- About section full width -->
+    <div class="footer-col footer-about">
+      <h3>About This Project</h3>
+      <p>
+        A devotional learning website dedicated to 
+        the life, teachings, sacred places, and spiritual wisdom of Sri Krishna.
+        Created to inspire faith, knowledge, and inner peace.
+      </p>
+      <p>This website is a spiritual guide for devotees and enthusiasts of Sri Krishna. Discover the divine stories, sacred temples, festivals, and teachings that highlight the life and philosophy of Krishna. Learn about Krishna’s early life in Mathura and Vrindavan, his heroic deeds in Dwarka, and the spiritual significance of holy places like Udupi, Barsana, and Guruvayur. Enrich your devotion with motivational quotes, devotional products, and practical insights into a Krishna-centered lifestyle.</p>
+    </div>
+
+    <!-- Other columns in flex -->
+    <div class="footer-cols">
+
+      <div class="footer-col">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#who-sri-krishna">Who is Sri Krishna</a></li>
+          <li><a href="#why-SrKrishna-Worshiped">Why Krishna is Worshiped</a></li>
+          <li><a href="places.html">Must Visit Places</a></li>
+          <li><a href="quotes.html">Motivational Quotes</a></li>
+          <li><a href="products.html">Devotional Products</a></li>
+          <li><a href="festivals.html">Festivals</a></li>
+          <li><a href="contact.html">Temple Contacts</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Holy Places</h3>
+        <ul>
+          <li>Mathura — Birthplace of Krishna</li>
+          <li>Vrindavan — Land of Divine Love</li>
+          <li>Dwarka — Kingdom of Krishna</li>
+          <li>Udupi — Temple Town of Krishna</li>
+          <li>Barsana — Birthplace of Radha</li>
+          <li>Guruvayur — Krishna Temple in Kerala</li>
+          <li>ISKCON — International Society for Krishna Consciousness</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Festivals</h3>
+        <ul>
+          <li>Sri Krishna Janmashtami — Celebration of Krishna’s Birth</li>
+          <li>Holi — Festival of Colors</li>
+          <li>Govardhana Puja — Lifting of Govardhana Hill</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Devotional Highlights</h3>
+        <ul>
+          <li>Bhagavad Gita Teachings</li>
+          <li>Sacred Books & Idols</li>
+          <li>Krishna Paintings</li>
+          <li>Japamala & Accessories</li>
+          <li>Spiritual Lifestyle</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer-divider"></div>
+
+  <div class="footer-bottom">
+   “Where devotion meets divine wisdom”  
+    <br>
+    © 2026 Sri Krishna Devotional Learning Project
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/fav1.png">
+    <title>Products</title>
+    <style>
+    
+         *{
+        
+            box-sizing: border-box;
+             font-family: sans-serif;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:  rgba(4, 22, 87,0.9);
+
+             align-items: center;
+           
+        
+            position: sticky;
+            top: 0; 
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            
+             color: #ffd54f;
+            /* border: 2px solid black; */
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+
+        body{
+            background-image: url(./Assets/background.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        /* ---------------------- */
+
+
+        .heading{
+            text-align: center;
+            text-decoration: underline;
+            color: rgba(31, 102, 73);
+
+        }
+        .sub-heading{
+            text-align: center;
+            margin-left: 250px;
+            margin-top: -10px;
+            
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 150vh;
+        }
+
+        .sub-container{
+            width: 250px;
+            background-color: #fff;
+            height: 400px;
+            border-radius: 10px;
+
+
+            
+        }
+        .sub-container img{
+            height: 250px; 
+            width:250px;
+            padding: 10px;
+        }
+         .sub-container h4, .sub-container p{
+            text-align: center;
+         }
+    </style>
+</head>
+<body>
+     <nav class="nav">
+            <a href="#" class="nav-link" ><img src="./Assets/main_logo.png" alt="Sri Krishna Logo" height="100" width="200"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item " style="flex-grow: 2;"><a href="places.html" class="nav-link ">Must Visit Places</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="quotes.html" class="nav-link">Popular Quotes</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="festivals.html" class="nav-link">Festivals</a></li>
+                 <li class="nav-item" style="flex-grow: 6;"><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+    </nav>
+
+    <h1 class="heading">Sacred Treasures of Krishna</h1>
+    <h3 class="sub-heading"> - Blessings to Take Home</h3>
+
+    <h2>Sacred Books:</h2>
+    <div class="container">
+        <div class="sub-container">
+            <img src="./Assets/mahabharatha-comic.jpg" alt="" >
+            <h4>Mahabharata Comic Book Collection - 42 Illustrated Stories in 3 Volumes</h4>
+            <p>
+                <b>2856/-</b>
+                <strike>4449/-</strike>
+            </p>
+
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/bhagavatgita-english.jpg" alt="" >
+            <h4>ISKCON Bhagavad Gita As It Is in English Language by A.C.Bhaktivedanta Swami Prabhupada </h4>
+            <p>
+                <b>274/-</b>
+                <strike>499/-</strike>
+            </p>
+
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/bhagavatgita-telugu.jpg" alt="" >
+            <h4>Bhagavad-Gita Telugu </h4>
+            <p>
+                <b>240/-</b>
+                <strike>349/-</strike>
+            </p>
+
+        </div>
+        <div class="sub-container">
+            <img src="./Assets/bhagavatgita-hindi.jpg" alt="" >
+            <h4>Shrimad Bhagwat Geeta Yatharoop Hindi </h4>
+            <p>
+                <b>208/-</b>
+                <strike>599/-</strike>
+            </p>
+
+        </div>
+         <div class="sub-container">
+            <img src="./Assets/bhagavatgita-child.jpg" alt="" >
+            <h4>Bhagavad Gita for Children </h4>
+            <p>
+                <b>439/-</b>
+                <strike>550/-</strike>
+            </p>
+
+        </div>
+         <div class="sub-container">
+            <img src="./Assets/child1.jpg" alt="" >
+            <h4>365 Krishna Stories: Tales of Lord Krishna’s Miracles, Wisdom & Devotion </h4>
+            <p>
+                <b>545/-</b>
+                <strike>900/-</strike>
+            </p>
+
+        </div>
+        <div class="sub-container">
+            <img src="./Assets/child3.jpg" alt="" >
+            <h4> My First Shaped Board Book: Illustrated Lord Krishna Hindu Mythology Picture Book for Kids</h4>
+            <p>
+                <b>149/-</b>
+                <strike>199/-</strike>
+            </p>
+
+        </div>
+
+         <div class="sub-container">
+            <img src="./Assets/child2.jpg" alt="" >
+            <h4> 108 Krishna Stories for Children (Illustrated) - Story Book for Kids</h4>
+            <p>
+                <b>143/-</b>
+                <strike>180/-</strike>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <h2>Idols & Murties:</h2>
+
+    <div class="container">
+        <div class="sub-container">
+            <img src="./Assets/krishna1.jpg" alt="" >
+            <h4>Krishna Idol for Car Dashboard  </h4>
+            <p>
+                <b>569/-</b>
+                <strike>1,999/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna2.jpg" alt="" >
+            <h4>Radha Krishna Resin Idol for Car Dashboard & Home Decor </h4>
+            <p>
+                <b>499/-</b>
+                <strike>1,299/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna3.jpg" alt="" >
+            <h4>rishna Idol Small | Lord Krishna Murti | Krishna Statue Idol for Car, Pooja, Temple, Decoration, Festivals </h4>
+            <p>
+                <b>569/-</b>
+                <strike>1,999/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna4.jpg" alt="" >
+            <h4>AONA Resin Krishna Statue Large Sized Slim with Flute for Home Decor  </h4>
+            <p>
+                <b>3798/-</b>
+                <strike>8,000/-</strike>
+            </p>
+        </div>
+
+
+        <div class="sub-container">
+            <img src="./Assets/krishna5.jpg" alt="" >
+            <h4>Collectible India Metal Gold Plated Radha Krishna Idol </h4>
+            <p>
+                <b>402/-</b>
+                <strike>999/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna6.jpg" alt="" >
+            <h4>COVACURE 3D Radha Krishna Swing Crystal Ball Night Lamp</h4>
+            <p>
+                <b>239/-</b>
+                <strike>499/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna7.jpg" alt="" >
+            <h4>KridayKraft Laddu Gopal on Jhulla Palana Metal Statue Gold Plated Decor </h4>
+            <p>
+                <b>401/-</b>
+                <strike>850/-</strike>
+            </p>
+        </div>
+
+        <div class="sub-container">
+            <img src="./Assets/krishna8.jpg" alt="" >
+            <h4>Radha Krishna 3D Idol with Box (Baal Krishna Theme) </h4>
+            <p>
+                <b>199/-</b>
+                <strike>499/-</strike>
+            </p>
+        </div>
+
+    </div>
+
+
+    <h2>Posters & Wall Art</h2>
+    <div class="container">
+        <div class="sub-container">
+            
+            <img src="./Assets/p1.jpg" alt="" >
+            <h4>ArtX Canvas Krishna Playing Flute Wall Painting </h4>
+            <p>
+                <b>999/-</b>
+                <strike>2,999/-</strike>
+            </p>
+        </div>
+        <div class="sub-container">
+            
+            <img src="./Assets/p2.jpg" alt="" >
+            <h4>Masstone Divine Radhe Krishna with Flute Wall Painting with UV Textured Framed Wall Art  </h4>
+            <p>
+                <b>378/-</b>
+                <strike>1,999/-</strike>
+            </p>
+        </div>
+        <div class="sub-container">
+            
+            <img src="./Assets/p3.jpg" alt="" >
+            <h4>Livin'luxe paintings Radha krishna religious modern art Premium Sparkle lamination</h4>
+            <p>
+                <b>729/-</b>
+                <strike>1,999/-</strike>
+            </p>
+        </div>
+        <div class="sub-container">
+            
+            <img src="./Assets/p4.jpg" alt="" >
+            <h4>SAF Radha Krishna with couple peacock UV Textured MDF Abstract Panel Painting</h4>
+            <p>
+                <b>204/-</b>
+                <strike>1,599/-</strike>
+            </p>
+        </div>
+
+        
+         <div class="sub-container">
+            
+            <img src="./Assets/p5.jpg" alt="" >
+            <h4>TwoXCrafts Radha Krishna Divine Love Canvas Wall Painting</h4>
+            <p>
+                <b>1,204/-</b>
+                <strike>2,599/-</strike>
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Spritual Accessories</h2>
+    <div class="container">
+        <div class="sub-container">
+             <img src="./Assets/a1.jpg" alt="" >
+            <h4>Krishna dress for Kids, krishna dress for baby boy, kanha dress for kids</h4>
+            <p>
+                <b>598/-</b>
+                <strike>1,299/-</strike>
+            </p>
+        </div>
+
+         <div class="sub-container">
+             <img src="./Assets/a3.jpg" alt="" >
+            <h4>Tulsi Mala 108 Beads Original for Japa Meditation and Prayer</h4>
+            <p>
+                <b>379/-</b>
+                <strike>599/-</strike>
+            </p>
+        </div>
+
+         <div class="sub-container">
+             <img src="./Assets/a2.jpg" alt="" >
+            <h4>Peacock Feather Krishna Bracelet for Men & Women</h4>
+            <p>
+                <b>299/-</b>
+                <strike>799/-</strike>
+            </p>
+        </div>
+         <div class="sub-container">
+             <img src="./Assets/a4.jpg" alt="" >
+            <h4>Men's White T-Shirt with Colorful Krishna Graphic, 100% Polyster</h4>
+            <p>
+                <b>249/-</b>
+                <strike>799/-</strike>
+            </p>
+        </div>
+         <div class="sub-container">
+             <img src="./Assets/a5.jpg" alt="" >
+            <h4>N S Padam Music House Bamboo Flute Bansuri</h4>
+            <p>
+                <b>199/-</b>
+                <strike>999/-</strike>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-around;
+        }
+        .sub-nav{
+            display: flex;
+            border: 2px solid red;
+            width: 30%;
+            justify-content: space-between;
+        }
+        .dropdown-menu{
+            display: none;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+            position: absolute;
+            z-index: 10;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+   <nav class="main">
+        <img src="logo.jpg" alt="" height="100" width="200">
+        <ul class="sub-nav">
+            <li><a href="">home</a></li>
+            <li class="dropdown">
+                <a href="">course</a>
+                <ul class="dropdown-menu">
+                    <li><a href="">cse</a></li>
+                    <li><a href="">ece</a></li>
+                    <li><a href="">eee</a></li>
+                </ul>
+            </li>
+            <li><a href="">career</a></li>
+        </ul>
+   </nav>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates id nihil suscipit neque quo eveniet, rem excepturi, inventore reprehenderit voluptatem iure exercitationem quibusdam. Repudiandae provident architecto aliquid quam, nemo doloremque!
+   Id blanditiis quia sequi nesciunt illum porro. Saepe qui ex optio similique voluptatem dolorum pariatur temporibus voluptatibus cum, nulla dignissimos? Sed iusto quod ducimus modi earum ea voluptates sint ipsa!
+   Consequatur, eligendi exercitationem deserunt qui vero asperiores similique incidunt amet beatae iure, distinctio placeat veritatis error eos nemo eveniet corrupti quaerat unde tempore? Molestias doloribus id harum unde neque deleniti?
+   Molestias magnam quaerat soluta nam porro omnis ea dicta. Ut eum doloremque, quisquam deserunt qui totam laborum aspernatur. Fuga similique aspernatur atque enim vitae eum eius, labore magnam incidunt optio.</p>
+</body>
+</html>

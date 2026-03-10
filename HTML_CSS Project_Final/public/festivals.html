@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/fav1.png">
+    <title>Festivals</title>
+    <style>
+          *{
+        
+            box-sizing: border-box;
+             font-family: sans-serif;
+            /* overflow-x: hidden; */
+        }
+        
+        .nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color:  rgba(4, 22, 87,0.9);
+
+             align-items: center;
+           
+        
+            position: sticky;
+            top: 0; 
+
+        }
+        .nav-item{
+            display: inline;
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            
+             color: #ffd54f;
+            /* border: 2px solid black; */
+
+        }
+        .sub-nav{
+            display: flex;
+            flex-direction: row;
+            width: 700px;
+        }
+        /* ---------------- */
+
+ .container{
+        width: 90%;
+        margin: auto;
+        height: 140vh;
+       }
+       .section1{
+        
+        padding: 50px;
+        
+       }
+       .sec1-h1{
+        text-align: center;
+        text-decoration: underline;
+        color: rgba(4, 22, 87,0.9) ;
+
+       
+       }
+       .sub_section1{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .section1-left{
+        /* border: 2px solid red; */
+        height: 90vh;
+        width: 45%;
+
+       }
+       .section1-left img{
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+       }
+       .section1-right{
+        /* border: 2px solid blue; */
+        height: 90vh;
+        width: 50%;
+        margin-left: 10px;
+       }
+       .section1-right p{
+        text-indent: 50px;
+        line-height: 21px;
+
+       }
+  
+
+        .container2{
+        /* background-color:   */
+       
+        height: 140vh;
+        width: 100%;
+    }
+    .sub-container2{
+         /* color: #FF4400; */
+         width: 90%;
+         margin: auto;
+         padding: 50px;
+    }
+    .sub-container2 h1{
+        text-align: center;
+        text-decoration: underline;
+        color:rgba(4, 22, 87,0.9); 
+    }
+
+      .sub_section2{
+        padding-top: 50px;
+        display: flex;
+        justify-content: space-between;
+       }
+       .sec2-left{
+        /* border: 2px solid red; */
+        height: 90vh;
+        width: 55%;
+
+       }
+        .sec2-right{
+        /* border: 2px solid blue; */
+    
+        width: 40%;
+        margin-left: 10px;
+       }
+       .sec2-right img{
+        height: 90vh;
+        width: 100%;
+        object-fit: cover;
+        /* border: 2px solid red; */
+       }
+       .sec2-left dl dt{
+            font-weight: 600;
+            margin-top: 25px;
+           font-size: large;
+            
+
+        }
+       .sec2-left dl dt::before{
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  background-image: url("./Assets/bullet.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.sec2-left dl dd{
+    padding-top: 10px;
+}
+    </style>
+</head>
+<body>
+     <nav class="nav">
+            <a href="#" class="nav-link" ><img src="./Assets/main_logo.png" alt="Sri Krishna Logo" height="100" width="200"></a>
+         
+                <ul class="sub-nav">
+                <li class="nav-item" style="flex-grow: 2;"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item " style="flex-grow: 2;"><a href="places.html" class="nav-link ">Must Visit Places</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="quotes.html" class="nav-link">Popular Quotes</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="products.html" class="nav-link">Products</a></li>
+                <li class="nav-item" style="flex-grow: 2;"><a href="festivals.html" class="nav-link">Festivals</a></li>
+                <li class="nav-item" style="flex-grow: 6;"><a href="contact.html" class="nav-link">Contact US</a></li>
+                </ul>
+                
+       
+            </nav>
+
+
+            <!-- ====================================== -->
+            <div class="container" id="janmashtami">
+    <div class="section1">
+        <h1 class="sec1-h1">Krishna Janmashtami</h1>
+
+        <div class="sub_section1">
+            <!-- Left Image -->
+            <div class="section1-left">
+                <img src="./Assets/janmastami.jpg" alt="Krishna Janmashtami">
+            </div>
+
+            <!-- Right Content -->
+            <div class="section1-right">
+
+                <h2>When is it Celebrated?</h2>
+                <p>
+                    Krishna Janmashtami is observed on the Ashtami (8th day) of the Krishna Paksha 
+                    (waning phase of the moon) in the Hindu month of Bhadrapada. 
+                    It usually falls in August or September each year.
+                </p>
+                <p>
+                    In 2026, Krishna Janmashtami will be celebrated on Saturday, September 5 
+                    (dates may vary based on regional lunar calendars).
+                </p>
+
+                <h2>Why is it Celebrated?</h2>
+                <p>
+                    Krishna Janmashtami marks the birth anniversary of Lord Krishna, 
+                    the eighth avatar of Vishnu.
+                </p>
+
+                <p>Lord Krishna is revered as the divine teacher of:</p>
+                <ul>
+                    <li>Love</li>
+                    <li>Righteousness (Dharma)</li>
+                    <li>Devotion</li>
+                </ul>
+
+                <p>
+                    His life and teachings are preserved in sacred scriptures such as the 
+                    Bhagavad Gita and the Mahabharata.
+                </p>
+
+                <p>
+                    Devotees celebrate this day to honor Krishna’s miraculous birth in a prison 
+                    cell in Mathura, where he incarnated to restore dharma and guide humanity.
+                </p>
+
+                <p>His life symbolizes:</p>
+                <ul>
+                    <li>Victory of good over evil</li>
+                    <li>Divine love and compassion</li>
+                    <li>Spiritual wisdom and guidance</li>
+                </ul>
+
+               
+
+               
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container2" id="janmashtami-celebration">
+    <div class="sub-container2">
+        <h1>How is Janmashtami Celebrated?</h1>
+
+        <div class="sub_section2">
+
+            <!-- Left Content -->
+            <div class="sec2-left">
+                <dl>
+                    <dt>Midnight Darshan</dt>
+                    <dd>
+                        Lord Krishna is believed to have been born at midnight. Devotees stay awake 
+                        through the night and gather in temples for special prayers, bhajans, and 
+                        chanting until the sacred birth moment.
+                    </dd>
+
+                    <dt>Fasting and Bhajans</dt>
+                    <dd>
+                        Many devotees observe a fast until midnight. Throughout the day, homes and 
+                        temples echo with devotional songs, prayers, and chanting of Krishna’s holy names.
+                    </dd>
+
+                    <dt>Temple Decorations and Jhula Seva</dt>
+                    <dd>
+                        Temples and homes are decorated with flowers and lights. Baby Krishna (Bal Gopal) 
+                        is placed in a beautifully decorated cradle (jhula), and devotees gently rock it 
+                        while singing devotional hymns.
+                    </dd>
+
+                    <dt>Welcoming Krishna with Footprints</dt>
+                    <dd>
+                        Devotees draw tiny footprints from the entrance of their homes to the prayer room, 
+                        symbolizing the arrival of baby Krishna and inviting divine blessings.
+                    </dd>
+
+                    <dt>Offerings and Prasadam</dt>
+                    <dd>
+                        Special sweets and vegetarian dishes are lovingly prepared and offered to Krishna. 
+                        Butter and milk-based sweets are especially popular, reflecting Krishna’s fondness for dairy.
+                    </dd>
+
+                    <dt>Cultural Programs</dt>
+                    <dd>
+                        Communities organize devotional dramas and dance performances depicting Krishna’s 
+                        divine life and playful leelas, sharing spiritual stories through art and celebration.
+                    </dd>
+                </dl>
+            </div>
+
+            <!-- Right Image -->
+            <div class="sec2-right">
+                <img src="./Assets/krishna_foot.jpg" alt="Janmashtami Celebration">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container" id="holi">
+    <div class="section1">
+        <h1 class="sec1-h1">Holi – Festival of Colors</h1>
+
+        <div class="sub_section1">
+            <!-- Left Image -->
+            <div class="section1-left">
+                <img src="./Assets/holi_dhan.jpg" alt="Holi Festival">
+            </div>
+
+            <!-- Right Content -->
+            <div class="section1-right">
+
+                <h2>When is Holi Celebrated?</h2>
+                <p>
+                    Holi is celebrated on the full moon day (Purnima) of the Hindu month 
+                    of Phalguna, which usually falls in February or March.
+                </p>
+
+                <p>The celebration lasts for two days:</p>
+                <ul>
+                    <li><strong>Day 1 — Holika Dahan:</strong> Bonfire night symbolizing the burning of evil</li>
+                    <li><strong>Day 2 — Rangwali Holi:</strong> The grand celebration with colors, water, and festivities</li>
+                </ul>
+
+                <h2>Why is Holi Celebrated?</h2>
+
+                <h3> Victory of Good over Evil</h3>
+                <p>
+                    Holi commemorates the story of Prahlada, a devoted follower of Vishnu.
+                    The demon king Hiranyakashipu tried to kill him for his devotion.
+                    His sister Holika sat in a fire with Prahlada, believing she was immune to flames.
+                    But divine grace saved Prahlada while Holika burned — symbolizing that
+                    faith and goodness always triumph over evil.
+                </p>
+
+                <h3> Celebration of Divine Love</h3>
+                <p>
+                    Holi also celebrates the playful love of Krishna and Radha.
+                    In Vrindavan and Mathura, Holi is celebrated with great devotion,
+                    remembering Krishna playfully applying colors on Radha and the gopis.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container2" id="holi-celebration">
+    <div class="sub-container2">
+        <h1>How is Holi Celebrated?</h1>
+
+        <div class="sub_section2">
+
+            <!-- Left Content -->
+           <div class="sec2-left">
+    <dl>
+        <dt>Holika Dahan (Bonfire Night)</dt>
+        <dd>Families gather in the evening to light bonfires, symbolizing the victory of good over evil, inspired by the story of Prahlada and Holika.</dd>
+        <dd>Devotees offer prayers for protection, health, and prosperity, while the fire represents purification and new beginnings.</dd>
+
+        <dt>Playing with Colors</dt>
+        <dd>On Rangwali Holi, people joyfully smear colored powders (gulal) and splash water using balloons and pichkaris.</dd>
+        <dd>The streets come alive with laughter, music, and dance, breaking social barriers and spreading happiness among all.</dd>
+
+        <dt>Festive Celebrations</dt>
+        <dd>Communities organize devotional songs, folk dances, and cultural programs depicting Krishna and Radha’s playful leelas.</dd>
+        <dd>These gatherings strengthen family and community bonds while celebrating life’s vibrancy.</dd>
+
+        <dt>Sweets and Festive Foods</dt>
+        <dd>Special sweets like gujiya, malpua, and drinks like thandai are prepared and shared.</dd>
+        <dd>Sharing festive foods symbolizes love, togetherness, and joy among family, friends, and neighbors.</dd>
+
+        <dt>Spreading Joy and Harmony</dt>
+        <dd>Holi encourages forgiveness, reconciliation, and the renewal of relationships.</dd>
+        <dd>The festival promotes friendship, unity, and harmony, making it a celebration of life and human connection.</dd>
+    </dl>
+</div>
+
+            <!-- Right Image -->
+            <div class="sec2-right">
+                <img src="./Assets/holi.jpg" alt="Holi Celebration">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="container2" id="govardana-puja">
+    <div class="sub-container2">
+        <h1>Govardana Puja – Celebrating the Lifting of Govardhan Hill</h1>
+
+        <div class="sub_section2">
+
+            <!-- Left Content -->
+            <div class="sec2-left">
+                <dl>
+                    <dt>When is it Celebrated?</dt>
+                    <dd>
+                        Govardana Puja is observed on the fourth day of Diwali (the day after Naraka Chaturdashi), 
+                        in the Hindu month of Kartik (October–November). It commemorates the day when Lord Krishna 
+                        lifted the Govardhan Hill to protect the villagers of Vrindavan from torrential rains sent by Indra.
+                    </dd>
+
+                    <dt>Why is it Celebrated?</dt>
+                    <dd>
+                        The festival honors Krishna’s divine protection of his devotees and expresses gratitude 
+                        for nature’s bounty—the hill, cows, and fertile land that sustain life.
+                    </dd>
+                    <dd>
+                        It also reinforces the lesson of humility and devotion, as the villagers realized that faith 
+                        in Krishna is greater than worship of material power.
+                    </dd>
+
+                    <dt>How is Govardana Puja Celebrated?</dt>
+                    <dd>
+                        <strong>Creating the Govardhan Hill Replica:</strong> Devotees build a small mound of cow dung or soil, 
+                        decorated with flowers, grains, and miniature cows, representing Govardhan Hill. Offerings of fruits, 
+                        vegetables, sweets, and milk products are placed around it.
+                    </dd>
+                    <dd>
+                        <strong>Worship and Prayers:</strong> Devotees perform aarti around the hill replica and sing bhajans 
+                        and kirtans dedicated to Krishna, invoking his blessings.
+                    </dd>
+                    <dd>
+                        <strong>Annadanam / Food Offerings:</strong> Vegetarian dishes, especially milk-based sweets and satvik foods, 
+                        are offered to Krishna and then shared among family and community members.
+                    </dd>
+                    <dd>
+                        <strong>Community Participation:</strong> Temples and homes host gatherings where people share prasad, 
+                        recount the story of Krishna lifting the hill, and children play with miniature cow and hill models, 
+                        symbolizing Krishna’s divine leela.
+                    </dd>
+                    <dd>
+                        <strong>Symbolic Practices:</strong> Many devotees worship cows, linking the day to Krishna’s love for cows 
+                        and pastoral life. Some communities perform processions around the Govardhan replica, chanting Krishna’s holy names.
+                    </dd>
+                </dl>
+            </div>
+
+            <!-- Right Image -->
+            <div class="sec2-right">
+                <img src="./Assets/govardana puja.jpg" alt="Govardana Puja Celebration">
+            </div>
+
+        </div>
+    </div>
+</div>
+ 
+</body>
+</html>
