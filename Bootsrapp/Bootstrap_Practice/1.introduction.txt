@@ -1,0 +1,276 @@
+Bootstrap
+=========
+
+what is Bootstrap: 
+------------------
+Bootstrap is a popular Front-end Framework used to build responsive and mobile-friendly websites quickly.
+
+it provides ready-made:
+ 1. CSS styles (design, layout, spacing, colors etc..)
+ 2. UI components (buttons, navbars,cards, modals,forms,etc..)
+ 3. JavaScript features (dropdowns, carousels,tabs, popups etc..)
+
+Who
+---
+Bootstrap is invented by Mark Otto and Jacob Thornton
+
+Where
+-----
+When they are working at twitter
+
+When
+----
+It was originally developed in 2010 and first publically released in 2011
+
+why
+---
+they created bootstrap to maintain consistent design across Twitter's internal tools and later released it as an open source framework.
+
+================================================================================================
+================================================================================================
+
+Histoty of Bootsrap:
+===================
+
+1.Bootstrap 1(2011)
+-------------------
+. First public release
+. basic responsive grid system
+. core css for 
+   . forms
+   . buttons
+   . tables
+. simple UI components
+    . navbars
+    . alerts 
+. jQuiry pluggins for interactivity
+
+2. Bootstrap 2(2012)
+--------------------
+. fully responsive design (mobile first suported started)
+. improved grid system
+. new UI components
+     . thumbnails
+     . modals
+     . dropdowns 
+     . carousals
+. better icons
+. more custamaization
+
+3. Bootsrap 3(2013)
+-------------------
+. Mobile first framework (oficially)
+. Flat design (removed gradients & heavy styles)
+. new grid system
+     . xs, sm, md, lg break points
+. Redesigned components
+     . panels
+     . list groups 
+     . input groups 
+. better navbar system 
+. improved documentation
+     
+4. Bootstrap 4(2018)
+--------------------
+. switched from less to sass
+     . Both Less and Sass are CSS preprocessors.
+     . LESS = Leaner Style Sheets
+     . it adds feature to css like variables, nesting, functions, mixins
+        .    @primary: blue;
+            .button {
+                background: @primary;
+            }
+
+     . SASS = Syntactically Awesome Style Sheets
+     . it adds feature to css like variables, nesting, functions, mixins, inheritance and better modular stucture
+        .   $primary: blue;
+            .button {
+                background: $primary;
+            }
+     . SASS is more popular than Less
+
+. introduced flexbox grid system
+. new UI componets 
+    . cards
+    . Utilities for spacing
+. Improved forms
+. new responsive breakpoints (xl added)
+. droped icons
+. better customaization
+
+
+5. Bootsrap 5(2021-present)
+---------------------------
+. removed jQuiry dependency
+. Rewritten in Venilla JavaScript
+. new grid breakpoint (XXl)
+. new UI componets
+   . OffCanvas menu
+   . Accordian
+. improved forms with floating lables
+. Css custom properties (variables)
+. Better utilities API
+. Improved RTL (Right- to - left) support
+. Faster Performance
+
+
+
+
+Difference between Bootsrap 4 and Bootstrap 5
+=================================================
+
+| Feature / Aspect           | Bootstrap 4                  | Bootstrap 5                                  |
+| -------------------------- | ---------------------------- | -------------------------------------------- |
+| **Release Year**           | 2018                         | 2021                                         |
+| **jQuery Dependency**      | ✅ Requires jQuery           | ❌ No jQuery (Vanilla JavaScript)          |
+| **Grid System**            | Flexbox grid                 | Improved Flexbox grid                        |
+| **Responsive Breakpoints** | xs, sm, md, lg, xl           | sm, md, lg, xl, xxl (xs removed)             |
+| **Forms**                  | Custom forms + default forms | Redesigned forms, floating labels            |
+| **Components**             | Cards, Modals, Navbars, etc. | Added Offcanvas, improved Accordion          |
+| **Utilities**              | Limited utility classes      | Expanded utility API                         |
+| **CSS Support**            | Sass only                    | Sass + CSS Custom Properties (variables)     |
+| **Icons**                  | No built-in icons            | No built-in icons (separate Bootstrap Icons) |
+| **RTL Support**            | Not official                 | ✅ Official Right-To-Left support            |
+| **Browser Support**        | Supports Internet Explorer   | ❌ Dropped Internet Explorer support         |
+| **Performance**            | Heavier (jQuery included)    | Faster & lighter                             |
+| **Spacing Utilities**      | `.ml-`, `.mr-` etc.          | `.ms-`, `.me-` (start/end for RTL)           |
+
+
+
+================================================================================================
+================================================================================================
+
+
+Bootstrap Uses and features
+===========================
+1. Responsive Design:
+--------------------
+Problem           : Website look different on mobile, tablet, Laptop or desktop
+Bootstrap Solution: Bootsrap automatically adjust your website layout for all screen sizes.
+                    it uses flexible grid system and media Quiries
+
+2.Fast Developmet:
+-----------------
+Problem           : Designing buttons, forms, navbars from scratch takes time
+Bootstrap Solution: It gives ready-made CSS class and UI components
+                    you just use class names no heavy styling needed.
+                
+3.Grid system:
+-------------
+Problem           : Placing content properly on the page is hard
+                    we need to use display properties, position and marigin propertys
+Bootstrap Solution: Bootstrap divides the page into 12 columns
+                    we arrange content using
+                      . container --> page wrapper
+                      . row       --> horizontal section
+                      . col       --> vertical columns
+
+4. Browser Compatability:
+------------------------
+Problem            : Styles look different in different browsers.
+Bootstrap Solution : Works smoothly in modern browsers like chrome, edge, firefox,safari
+
+5. custamaization :
+-------------------
+In Bootstrap you can easily change styles, like colours, fonts, spacing, theme
+
+6. JavaScript pluggins:
+-----------------------
+Bootstrap adds interactivity like popups, dropdowns, tooltip, collapsible sections, sliders
+
+
+================================================================================================
+================================================================================================
+
+
+Ways to Use Bootstrap:
+========================
+1.Using Bootstrap via CDN (easiest method)
+----------------------------------------
+CDN = Content Delivery Network 
+. Here you use Bootstrap files directly from Internet
+
+Steps
+-----
+1. Goto to CDNjs website
+2. Search for Bootstrap
+3. there you can see tags for css and js 
+        1. for CSS copy the link tag containing "bootstrap.min.css"
+        2. for JS copy the Script tag containing "bootstrap.bundle.min.js"
+
+2. Download Bootstrap files (Offline method)
+-------------------------------------------
+Here we Download Bootstrap and store files on your computer.
+
+Steps
+------
+1.Go to Bootstrap official website
+2.Download compiled CSS & JS files
+3.Link files in your project
+
+ex:
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+3. Using Package Managers (Advanced / Developers)
+-------------------------------------------------
+Install Bootstrap using tools like:
+1.npm (only works when you have nodejs in your system)
+    . npm install bootstrap
+2.yarn
+    . yarn add bootstrap
+
+Then import into your project.
+
+==============================================================================
+==============================================================================
+
+Bootstrap — Supported Browsers
+==============================
+. Bootstrap is designed to work in all modern, popular browsers on both mobile and desktop.
+. Bootstrap supports: Latest stable versions of all major browsers
+
+Mobile devices
+---------------
+Generally speaking, Bootstrap supports the latest versions of each major platform’s default browsers. 
+Note that proxy browsers (such as Opera Mini, Opera Mobile’s Turbo mode, UC Browser Mini, Amazon Silk) are not supported.
+
+| Platform | Chrome    | Firefox   | Safari    | Android Browser & WebView |
+| -------- | --------- | --------- | --------- | ------------------------- |
+| Android  | Supported | Supported | —         | v6.0+ Supported           |
+| iOS      | Supported | Supported | Supported | —                         |
+
+Desktop browsers
+---------------
+Similarly, the latest versions of most desktop browsers are supported.
+
+| Platform | Chrome    | Firefox   | Microsoft Edge | Opera     | Safari    |
+| -------- | --------- | --------- | -------------- | --------- | --------- |
+| Mac      | Supported | Supported | Supported      | Supported | Supported |
+| Windows  | Supported | Supported | Supported      | Supported | —         |
+
+Internet Explorer
+----------------
+Internet Explorer is not supported. If you require Internet Explorer support, please use Bootstrap v4.
+
+
+How Bootstrap Manages Browser Compatibility
+--------------------------------------------
+Bootstrap uses tools:
+    1.Autoprefixer :Automatically adds CSS prefixes
+                    Helps styles work across browsers
+    2.Browserslist :Defines which browser versions to support
+                    Used by many frontend tools
+    
+
+==================================================================================================
+==================================================================================================
+
+Still want to use jQuery? It’s possible!
+----------------------------------------
+1.New projects → No need to use jQuery
+2.Existing jQuery projects → You can continue using it with Bootstrap 5
+
+This flexibility helps developers upgrade without rewriting all their existing code.
+
