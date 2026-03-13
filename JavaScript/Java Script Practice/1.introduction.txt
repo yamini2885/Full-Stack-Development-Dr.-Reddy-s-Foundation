@@ -1,0 +1,64 @@
+Java Script:
+============
+
+What is JavaScript:
+-----------------
+JavaScript is a cross-platform, object-oriented scripting language used to create interactive websites.
+
+Who Invented: Brendan Eich
+------------
+
+when Invented: 1995.
+--------------
+
+why JavaScript is created:
+--------------------------
+In the early days of the web, websites were static (they only displayed information). There was no interaction on webpages.
+
+Netscape wanted a language that could:
+. Make webpages interactive
+. Allow form validation before sending data to the server
+. Respond to user actions like clicks
+. Run directly inside the browser
+
+So Brendan Eich created JavaScript in just about 10 days to add these interactive features to websites.
+
+What JavaScript Can Do:
+----------------------
+JavaScript adds behavior and functionality to a webpage.
+
+For example it can:
+. Create animations
+. Handle button clicks
+. Show popup messages
+. Validate form inputs
+. Update page content without reloading
+. Build interactive menus and sliders
+
+
+
+Where JavaScript Runs
+=====================
+1. Client-side (Browser)
+-----------------------
+Runs inside a web browser like Chrome or Edge.
+It interacts with the DOM (Document Object Model) to change the webpage.
+
+Example:
+. Change text
+. Hide/show elements
+. Respond to clicks
+
+2. Server-side
+--------------
+JavaScript can also run on servers using
+Node.js.
+
+This allows JavaScript to:
+. Connect to databases
+. Handle user requests
+. Build full backend systems
+. Enable real-time apps (chat apps, collaboration tools)
+
+
+

@@ -1,0 +1,74 @@
+History of JavaScript
+=====================
+
+1. Early Internet (Early 1990s)
+-------------------------------
+. Websites were static and could only display text and images.
+. Users had very little interaction with web pages.
+. Netscape Communications created a popular browser called Netscape Navigator.
+. Netscape wanted a scripting language to make webpages interactive (buttons, form validation, dynamic updates).
+
+2. Creation of JavaScript (1995)
+--------------------------------
+. Brendan Eich created JavaScript while working at Netscape.
+. The first version was developed in about 10 days.
+. Initial names of the language:
+    . Mocha
+    . LiveScript
+    . Finally renamed JavaScript.
+
+The name was chosen partly because Java was very popular at that time.
+
+3. Multiple Browser Implementations (1996)
+-----------------------------------------
+. JavaScript started being used on many websites.
+. Different companies created their own versions.
+. Microsoft introduced JScript for Internet Explorer.
+. This caused compatibility issues between browsers.
+
+4. Standardization of JavaScript (1997)
+--------------------------------------
+. To solve compatibility problems, JavaScript was standardized by ECMA (European Computer Manufacturers Association) International.
+. ECMA is an international standards organization that creates standards for information and communication systems.
+. The official standard became ECMAScript.
+. Browsers started following this standard for consistency.
+
+5. Rise of Dynamic Web Applications (Early 2000s)
+-------------------------------------------------
+. JavaScript became more powerful with AJAX technology.
+. AJAX allowed webpages to communicate with servers without refreshing.
+. This enabled advanced web applications such as:
+    . Gmail
+    . Google Maps
+
+6. Server-Side JavaScript (2009)
+--------------------------------
+. Ryan Dahl created Node.js.
+. JavaScript could now run outside the browser on servers.
+. Developers could build:
+    . Backend systems
+    . APIs
+    . Real-time applications
+
+7. Modern JavaScript (2015)
+---------------------------
+. A major update called ECMAScript 2015 was released.
+. Important features introduced:
+    . let and const
+    . arrow functions
+    . classes
+    . modules
+    . promises
+
+8. JavaScript Today
+-------------------
+. JavaScript is now one of the most widely used programming languages.
+. Popular frameworks and libraries include:
+    . React
+    . Angular
+    . Vue.js
+. Used for:
+    . Web development
+    . Mobile apps
+    . Desktop applications
+    . Server-side development

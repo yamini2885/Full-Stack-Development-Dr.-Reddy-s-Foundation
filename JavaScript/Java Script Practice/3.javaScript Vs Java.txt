@@ -1,0 +1,19 @@
+JavaScript vs Java (Clear Explanation)
+=======================================
+
+1. Similarity Between JavaScript and Java
+-----------------------------------------
+. JavaScript syntax looks similar to Java.
+. Examples:
+    . Both use similar operators
+    . Similar control structures like:
+        . if
+        . for
+        . while
+        . similar naming conventions
+. Because of this similarity, the language LiveScript was renamed to JavaScript when Java became popular.
+. But similar syntax does not mean they are the same language.
+
+
+
+
