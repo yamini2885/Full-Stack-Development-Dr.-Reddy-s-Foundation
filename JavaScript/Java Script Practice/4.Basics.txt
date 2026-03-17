@@ -1,0 +1,48 @@
+Printing Statements in JavaScript
+=================================
+. In JavaScript, printing means displaying output either on the webpage, in the browser console, or as a popup message.
+
+there are 5 types of printing Statements in JavaScript:
+1.console.log()
+2.document.write()
+3.alert()
+4.console.error()
+5.console.warn()
+
+1.console.log()
+--------------
+. This is the most commonly used printing method, mainly for debugging and development.
+. this prints the output in console
+
+Ex:-
+    console.log("Hello World");//Hello World
+
+2.document.write()
+------------------
+. his prints content directly on the webpage.
+
+Ex:- 
+    document.write("Hello World");//Hello World
+
+3.alert()
+---------
+. This displays the output in a popup dialog box.
+. A popup window appears with the message.
+
+Ex:-
+    alert("Hello World");
+
+4. console.error()
+------------------
+. Used to print error messages in the console.
+
+Ex:-
+    console.error("Something went wrong");
+
+5. console.warn()
+----------------
+. Used to display warning messages in the console.
+
+Ex:-
+    console.warn("This is a warning");
+
