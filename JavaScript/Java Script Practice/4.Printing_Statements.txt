@@ -46,3 +46,18 @@ Ex:-
 Ex:-
     console.warn("This is a warning");
 
+
+==================================
+
+What is eval()?
+==============
+eval() is a built-in JavaScript function that:
+. Takes a string as input
+. Executes it as JavaScript code
+
+ex. 
+    eval("3 + 5");   // returns 8
+
+. it only executes string as JavaScript code and returns output but doesn't print the output
+. for printing we can use any printing statement out of 5 above
+

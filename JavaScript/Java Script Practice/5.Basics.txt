@@ -1,0 +1,163 @@
+Important points about JavaScript
+=================================
+1. JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
+2. JavaScript is case-sensitive 
+    (which means the variables named Yam and yam are not equal)
+    (Uppercase and lowercase letters matter)
+3. JavaScript allows Unicode characters in variable names
+    ex:
+        const Früh = "hello";
+    You can use characters from different languages
+4. Statements in JavaScript
+    Instructions are called statements
+    Statements usually end with a semicolon (;)
+    ex.
+        let x = 10;
+        let y = 20; 
+    Semicolons used to separate statements
+    ex.
+        Semicolons are optional in some cases
+        ex. 
+            let x = 10
+            let y = 20
+
+        Semicolons are Required when multiple statements in one line:
+        ex.
+           let x = 10; let y = 20;
+    
+    Note:
+         JavaScript can automatically add semicolons. This feature is called ASI(Automatic Semicolon Insertion)
+
+ How this ASI Works:
+ ------------------
+ ASI means JavaScript automatically adds semicolons (;) when you don’t write them.
+    
+    When does ASI add semicolons?
+    -----------------------------
+    1. At the end of a line
+        . If JavaScript thinks the statement is complete:
+        ex.
+            let x = 10
+            let y = 20
+        JS reads it as:
+            let x = 10;
+            let y = 20;
+    2. Before a line break that would cause an error
+       . JavaScript does NOT add a semicolon just because a new line starts
+       . It adds a semicolon ONLY if NOT adding one would cause a syntax error
+       ex:
+            let x = 10
+            [1,2,3].forEach(console.log)
+
+        Will JS insert a semicolon here?
+        . No in most cases
+        Because This is still a valid JavaScript expression:
+        ex: 
+            10[1,2,3].forEach(console.log)
+        so JS treat it as let x = 10[1,2,3].forEach(console.log)
+        Then:
+            . [1,2,3] → becomes "1,2,3"
+            . 10["1,2,3"] → undefined
+            . undefined.forEach(...) →  ERROR
+            . TypeError: Cannot read properties of undefined
+        So If next line starts with:
+            . [
+            . (
+            . +
+            . -
+        . JavaScript might join lines incorrectly
+        . So add a semicolon before it
+
+    3. When syntax cannot continue
+    ------------------------------
+    . If JS cannot combine two lines into one valid statement, it inserts ;
+
+   When ASI causes problems
+   ------------------------
+   1. return issue
+   --------------
+    ex: 
+        function test() {
+            return
+            5
+        }
+    JS converts it to:
+        function test() {
+            return;
+            5;
+        }
+    Output: undefined (not 5!)  
+    2.Starting with ( or [
+    ----------------------
+    ex:
+        let a = 5
+        (function() {
+            console.log("Hello")
+        })()
+    JS may treat it as:
+        let a = 5(function() {...})() -->ERROR
+
+5. JavaScript reads code from left to right
+    . It converts code into tokens
+
+
+===========================================================
+==========================================================
+
+What are Comments in JavaScript?
+================================
+Comments = notes written inside code that JavaScript ignores.
+. They are only for humans (developers)
+. The browser / JS engine does NOT execute them
+. Comments behave like whitespace (spaces)
+ex:
+    let a = 5; // comment
+    let b = 10;
+JS internally sees:
+    let a = 5;
+    let b = 10;
+. Comments are completely removed before execution
+
+Types of Comments
+-----------------
+1. Single-line comment (//)
+    . Used for Short notes
+    ex:
+        // This is a comment
+        let x = 10; // storing value in x
+    . Everything after // on that line is ignored.
+
+2. Multi-line comment (/* ... */)
+    . Used for longer explanations.
+    ex:
+        /* This is a multi-line comment
+        It can span multiple lines
+        Useful for big explanations */
+        let y = 20;
+
+Important Rule:  You CANNOT nest comments
+-----------------------------------------
+ex:
+    /* You can't, however, /* nest comments */ SyntaxError */
+    What JS sees:
+    . First /* → start comment
+    . First */ → end comment
+    So the second /* breaks the structure → error
+
+How to fix it
+    /* You can /* nest comments *\/ by escaping */
+. *\/ prevents JavaScript from thinking the comment ended.
+
+Special Comment: Hashbang (#!)
+-----------------------------
+#!/usr/bin/env node
+. This is used in Node.js scripts, not browsers.
+
+Purpose:
+Tells the system: “Run this file using Node.js”
+Example:
+    #!/usr/bin/env node
+    console.log("Hello");
+. Used when running JS files directly from terminal
+
+
