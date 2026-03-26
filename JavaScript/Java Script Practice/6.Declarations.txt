@@ -1,0 +1,6 @@
+Variable Declarations:
+---------------------
+. JavaScript has three kinds of variable declarations.
+. 1)var 
+. 2)let
+. 3)const
