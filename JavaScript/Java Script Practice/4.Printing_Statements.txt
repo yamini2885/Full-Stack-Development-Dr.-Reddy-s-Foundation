@@ -20,9 +20,26 @@ Ex:-
 2.document.write()
 ------------------
 . his prints content directly on the webpage.
+. it won't leave any spaces after printing the text.
 
 Ex:- 
-    document.write("Hello World");//Hello World
+    document.write("Hello World");
+    document.write("Hello World");//Hello WorldHello World
+
+.document.writeln()
+------------------
+. his prints content directly on the webpage.//Hello World
+. and it leaves one space after the text is printed
+
+Ex:- 
+    document.writeln("Hello World");
+    document.write("Hello World");//Hello World Hello World
+
+Note: 1. Here document is an active webpage in the browser,
+            write or writeln are the methods to create and display the content in the document.
+      2. Used only when you don't have any content in the Webpage because it tries to override all the Content that is already present in the body
+
+
 
 3.alert()
 ---------

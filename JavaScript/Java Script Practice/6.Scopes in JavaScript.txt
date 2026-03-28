@@ -1,0 +1,137 @@
+Sopes in JavaScript
+===================
+. Scope determines the accessibility (visibility) of variables in a program.
+. There are 4 main types of scope:
+    . Global Scope
+    . Module Scope
+    . Local Scope
+        . Function Scope
+        . Block Scope
+        . And remember:
+            . Lexical Scope = rule that decides how scope works (not a separate type)
+
+1)Global Scope:
+--------------
+. Global scope is the outermost scope in JavaScript.
+. A variable declared outside any function or block belongs to the global scope.
+. These variables can be accessed from anywhere in the program.
+. Global variables live as long as the program runs, from start to end.
+
+Ex:
+    const name = "Yamini"; // Global variable
+    
+    function greet() {
+        console.log(name); //  accessible
+    }
+
+    greet();
+    console.log(name); //  accessible
+
+2)Module Scope:
+--------------
+. Module scope is the scope of variables declared inside a JavaScript module.
+. Variables in module scope are accessible only within that file (module), not globally.
+. Module scope is the scope where variables are limited to a specific JavaScript file and are not accessible globally unless exported.
+
+    Example:
+    HTML file
+    --------
+        <script type="module" src="./6.ModuleScope.js"></script>
+        <script type="module" src="./6.ModuleScope1.js"></script>
+
+    6.ModuleScope.js
+    ----------------
+        var a = 10;
+        console.log(a) //10
+
+    6.ModuleScope1.js
+    -----------------   
+        console.log(a);// Uncaught ReferenceError: a is not defined at 6.ModuleScope1.js:1:13
+
+Note: To Use Variables in another file you must export and import
+
+3) Local Scope
+--------------
+. Local scope refers to variables that are declared inside a function or block and are accessible only within that specific area.
+. Local scope = limited access (not global)
+. there are two types of local scopes
+        A)Function Scope
+        B)Block Scope
+
+A)Functional Scope:
+------------------
+. Function scope is the scope created inside a function.
+. Variables declared inside a function are accessible only within that function and not outside.
+
+example:
+    function fun(){
+       var d = 10;
+       let e = "yamu";
+       const f = 50.68523;
+       console.log(d+" "+e+" "+f);
+    }
+    fun()
+    console.log(d+" "+e+" "+f); //Uncaught ReferenceError: d is not defined
+
+B)Block Scope:
+--------------
+. Block scope is the scope created inside a pair of curly braces { }.
+. Variables declared inside a block are accessible only within that block.
+
+Ex:
+    // Block Scope
+    if(true){
+        let x = 10;
+        const y = 20;
+        console.log(x,y);//10 20
+    }
+    console.log(x);//Uncaught ReferenceError: x is not defined
+    console.log(y);
+
+    //but var is not block scoped
+    if (true) {
+      var a = 100;
+    }
+    console.log(a); //100
+
+Important: Lexical Scope:
+-------------------------
+. Lexical scope means that the scope of a variable is determined by its position (location) in the source code.
+. JavaScript decides scope based on where variables are written, not where they are called.
+
+Ex:
+    let a = 10;
+    function outer() {
+      let b = 20;
+      function inner() {
+        let c = 30;
+        console.log(a, b, c); // 10 20 30
+      }
+      inner();
+    }
+    outer();
+
+Here:
+    When a function tries to access a variable:
+    . It first looks inside itself
+    . Then in its parent scope
+    . Then in global scope
+    This is lexical scope in action
+
+Important Rule: Inner scope can access outer scope, but outer cannot access inner
+Ex:
+function outer() {
+  function inner() {
+    let x = 100;
+  }
+
+  console.log(x); // Uncaught ReferenceError: x is not defined
+}
+
+
+Variable Declarations:
+---------------------
+. JavaScript has three kinds of variable declarations.
+. 1)var 
+. 2)let
+. 3)const
