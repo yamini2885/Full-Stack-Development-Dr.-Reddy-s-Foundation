@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div onmousemove="change(event)">
+
+    </div>
+    <p id="content"></p>
+    <script>
+        function change(bs){
+            // console.log(bs)
+            var coordX = bs.clientX;
+            var coordy = bs.clientY;
+            document.getElementById("content").innerText = `Cordinates (x,y) (${coordX},${coordy})`;
+        }
+    </script>
+</body>
+</html>
