@@ -160,4 +160,38 @@ Example:
     console.log("Hello");
 . Used when running JS files directly from terminal
 
+========================================================================================
+========================================================================================
+
+Variables in Js:
+---------------
+. A variable is like a container (box) that stores data.
+. The names of a Variables, called identifiers
+
+Rules to declare Variables
+--------------------------
+1. A JavaScript identifier usually starts with a
+    . letter (a-z, A-Z)
+    . underscore (_)
+    . dollar sign ($).
+    Ex:
+        let name1 = "Yamini"; //valid
+        let _age2 = 22;       //valid
+        let $total3 = 300;      //valid
+        let 1name = "abc";   //  invalid starts with number
+        let @value = 10;     //  invalid symbol
+        let user-name = "A"; //  invalid hyphen not allowed
+
+2. Can include:
+    numbers (but not at start)
+    Ex:
+        let $total3 = 300;      //valid
+        let 1name = "abc";   //  invalid starts with number
+3. Case-sensitive
+    Ex:
+        let name = "Yamini";
+        let Name = "Ravi";
+
+        console.log(name); // Yamini
+        console.log(Name); // Ravi
 

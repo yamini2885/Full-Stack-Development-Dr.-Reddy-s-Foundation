@@ -1,0 +1,132 @@
+
+<!-- two way databinding -->
+
+<label for="">username</label>
+<input type="text" name="username" id="uname" [(ngModel)]="username">
+<p>you entered {{username}}</p>
+
+
+
+<!-- Structural Directives -->
+ <!-- 1.ngIf -->
+
+ <!-- <img [src]="imgURL" alt="Purple world | legends of kpop" *ngIf="imgURL" height="400" width="800">
+ <button (click)="displayimg()">click to see legends</button> -->
+
+<!-- hide and display -->
+
+<!-- <img [src]="imgURL" alt="Purple world | legends of kpop" *ngIf="imgURL" height="400" width="800">
+ <button (click)="displayimg()" *ngIf="!imgURL">Display</button>
+  <button (click)="hideimg()" *ngIf="imgURL">Hide</button> -->
+
+
+<!-- --------------------------------------------------------------------- -->
+
+<!-- 2.ngIf-else -->
+
+  <!-- even odd -->
+   <!-- <div *ngIf="num%2 == 0; else oddnum">
+    <h1>{{num}} is even</h1>
+   </div>
+   <ng-template #oddnum>
+    <h1>{{num}} is odd</h1>
+   </ng-template> -->
+
+   <!-- ------------------------------------------------------------------- -->
+<!-- 3.ngSwitch -->
+
+   <div [ngSwitch]="day">
+    <div *ngSwitchCase="0">
+        <h1>Sunday</h1>
+    </div>
+    <div *ngSwitchCase="1">
+        <h1>Monday</h1>
+    </div>
+    <div *ngSwitchCase="2">
+        <h1>Tuesday</h1>
+    </div>
+    <div *ngSwitchCase="3">
+        <h1>Wednessday</h1>
+    </div>
+    <div *ngSwitchCase="4">
+        <h1>Thursday</h1>
+    </div>
+    <div *ngSwitchCase="5">
+        <h1>Friday</h1>
+    </div>
+    <div *ngSwitchCase="6">
+        <h1>Saturday</h1>
+    </div>
+    <div *ngSwitchDefault>
+        <h1>Invalid</h1>
+    </div>
+
+   </div>
+
+<!-- 4. ng for -->
+
+<div *ngFor="let a of arr">
+    <h1 *ngIf="a%2==0">{{a}} is even</h1>
+     <h1 *ngIf=" a%2!=0">{{a}} is odd</h1>
+
+</div>
+
+<div *ngFor="let a of arr">
+    <div *ngIf="a%2 == 0; else oddnum">
+    <h1>{{a}} is even</h1>
+   </div>
+   <ng-template #oddnum>
+    <h1>{{a}} is odd</h1>
+   </ng-template>
+
+</div>
+
+<!-- ---------------------------------------------------------- -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let p of products">
+            <div class="card">
+                <div class="card-header">
+                    <img [src]="p.image" alt="" class="card-image-top" height="400" width="400">
+                </div>
+                <div class="card-body">
+                    <h1>{{p.title}}</h1>
+                    <p>{{p.description}}</p>
+                    <label for="" class="badge bg-warning">Price : {{p.price | currency:'INR'}}</label>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Buy Now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- --------------------------------------------------------------------------------------------- -->
+<!-- Atribute Ditectives -->
+ <!-- ngStyle -->
+
+<div *ngFor="let a of arr">
+    <h1 [ngStyle]="{'color':a%2==0 ? 'red':'blue'}">{{a}}</h1>
+
+</div>
+
+<!-- ngClass -->
+
+<div *ngFor="let a of arr">
+    <h1 [ngClass]="{even:a%2==0,odd:a%2!=0}">{{a}}</h1>
+
+</div>
+
+
+
+
+
+
+
+
+

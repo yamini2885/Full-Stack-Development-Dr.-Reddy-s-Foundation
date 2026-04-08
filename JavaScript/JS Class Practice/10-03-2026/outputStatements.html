@@ -7,6 +7,8 @@
 </head>
 <body>
     <h5 id="myh1">this is heading</h5>
+    <button onclick="fun()">click me</button>
+    <h1 id="yam"></h1>
     <script>
         // Printing Statemets
         // 1. Console.log()
@@ -33,7 +35,10 @@
         //innerHTML
          document.getElementById("myh1").innerHTML="hello worls i am yamini"
         
-        
+        function fun(){
+            document.writeln("hi you cliked a button");
+            document.getElementById("yam").innerHTML = "hi hwllo welcome"
+        }
     </script>
 </body>
 </html>

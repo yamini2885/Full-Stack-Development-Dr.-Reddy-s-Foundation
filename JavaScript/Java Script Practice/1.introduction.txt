@@ -60,5 +60,47 @@ This allows JavaScript to:
 . Build full backend systems
 . Enable real-time apps (chat apps, collaboration tools)
 
+=======================================================
+
+What is JavaScript?
+-------------------
+. JavaScript is a high-level, interpreted programming language primarily used to make webpages interactive and dynamic
+. initially websites were static and could only display content.
+. Js allows webpages to respond to user actions and update content and server.
+. JS is Synchronous in Nature but it supports async features by using different API's 
+. Initially before node.js javascript is used as client side Scripting(front-end) 
+  but after node.js we can run javascript at Server side too(backend)
+. Node.js is a runtime Environment to run Js outside of the browser.
 
 
+Features of JavaScript:
+----------------------
+1. JavaScript is an object based and Object Oriented programming language.
+    -->Object based(in Js Objects are having inbuilt methods)
+    -->Object Oriented Programming(It contains OOPs concepts like polymorphism, encapsulation, abstraction, inheritence)
+2. JavaScript is Platform in-dependent Programming language
+    -->you can run on any browser because each browser has their own js engine
+
+    Browser                   JS-engine
+    -------                    --------
+    Chrome                    v8(version-8)
+    MS internet edge          old (chekra)
+                              new (V8)
+    safari                    JavaScriptCore
+    Mojila Firefox            SpiderMonkey
+3. JavaScript ia a loosely typed Programming language
+    --> no need to give semicolon
+4. JavaScript is a dynamic typed
+    --> Datatype of variable is decided in run time
+    --> we don't need to give datatype explicitly
+5. JavaScript is Case sensitive
+    --> Both Uppercase and lowercase words are treated different
+6. JavaScript is Interpreted programming language
+7. JavaScript is a Synchronous in nature / Single thread system
+    --> Only one call Stack is present in javascript
+8. JavaScript uses Just-in-time compiler 
+    -->used to check for syntax
+9. It is a client side and server side(node.js) programming language
+
+JavaScript Ecosystem:
+--------------------
